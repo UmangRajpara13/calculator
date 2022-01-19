@@ -1,0 +1,27 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+entity e_my_FlipFlop is
+	port (enable : in std_logic;
+			input	 : in integer;
+			Rst	 : in std_logic;
+			Clk	 : in std_logic;
+			buff 		 : buffer integer);
+end e_FlipFlop;
+
+architecture a_my_FlipFlop of e_my_FlipFlop is
+begin
+	p_my_FlipFlop: process (buff, clk, Rst, enable) is
+	begin
+		if (rising_edge(Clck)) then 
+		if (Enable = '1') then
+			buff <= input ;
+		end if;
+		if (Rst = '1') then
+			buff <=  0;
+		else null;
+		end if;
+		end if;
+	end process p_my_FlipFlop;
+end a_my_FlipFlop;

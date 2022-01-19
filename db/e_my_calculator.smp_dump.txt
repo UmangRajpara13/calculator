@@ -1,0 +1,10 @@
+
+State Machine - |e_my_calculator|e_my_finite_SM:finite_state_machine|slv_fsm_state
+Name slv_fsm_state.State_6 slv_fsm_state.State_5 slv_fsm_state.State_4 slv_fsm_state.state_3 slv_fsm_state.state_2 slv_fsm_state.state_1 slv_fsm_state.state_0 
+slv_fsm_state.state_0 0 0 0 0 0 0 0 
+slv_fsm_state.state_1 0 0 0 0 0 1 1 
+slv_fsm_state.state_2 0 0 0 0 1 0 1 
+slv_fsm_state.state_3 0 0 0 1 0 0 1 
+slv_fsm_state.State_4 0 0 1 0 0 0 1 
+slv_fsm_state.State_5 0 1 0 0 0 0 1 
+slv_fsm_state.State_6 1 0 0 0 0 0 1 

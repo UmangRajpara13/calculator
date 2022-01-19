@@ -1,0 +1,101 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+
+entity e_my_finite_SM is 
+   port (   clk             :in    std_logic;
+            reset   			 : in   std_logic;
+            output_state    :out   std_logic_vector(3 downto 0);
+				);
+end entity e_my_finite_SM;
+
+architecture a_my_finite_SM of e_my_finite_SM is
+
+---- Declaration Part -----------------------------------------------
+
+-- Signal Declarations
+   
+
+-- Type Declarations
+   type t_fsm_states is (state_0,state_1,state_2,state_3,State_4,State_5);
+   signal slv_fsm_state, slv_fsm_nextstate : t_fsm_states;
+   signal slv_switch_0 : std_logic_vector (3 downto 0);
+	signal slv_switch_1 : std_logic_vector (3 downto 0);
+	signal slv_switch_2 : std_logic_vector (3 downto 0);
+	signal slv_switch_3 : std_logic_vector (3 downto 0);
+---- Synthesis Attribute Declarations
+--	attribute syn_encoding: string;
+--	attribute syn_encoding of t_fsm_states : type is "0000 0001 0010 0011 0100 0101 0110 0111 1000";
+	signal pattern_0,pattern_1,pattern_2,pattern_3 : std_logic_vector(3 downto 0);
+
+begin
+
+---- Assignment Part ------------------------------------------------
+
+-- Concurrent Assignments:
+
+   pattern_3 <= pattern(15 downto 12);
+	pattern_2 <= pattern(11 downto 8);
+   pattern_1 <= pattern(7 downto 4);
+   pattern_0 <= pattern(3 downto 0);
+	
+	slv_switch_0 <= switch_input and pattern_0;
+	slv_switch_1 <= switch_input and pattern_1;
+	slv_switch_2 <= switch_input and pattern_2;
+	slv_switch_3 <= switch_input and pattern_3;
+ 
+      
+   p_FSM_transitions: process (clk,switch_input,start_signal) -- state table
+   begin
+      case slv_fsm_state is
+			when S_0 =>	if (reset = '0') and ( start_signal = '1') then 
+								slv_fsm_state <= S_1;
+								clock_start_signal <= '1';
+							end if;
+			
+         when S_1 =>	if (reset = '0') and ( switch_input = pattern_0) then 
+								slv_fsm_state <= S_2;
+						--	else 
+							--	slv_fsm_state <= S_0;
+                     end if;
+         when S_2 =>	if (reset = '0') and ( slv_switch_1 = pattern_1) then
+								slv_fsm_state <= S_3; 
+                     ---else
+								--slv_fsm_state <= S_0;
+                     end if;
+         when S_3 =>	if (reset = '0') and ( slv_switch_2 = pattern_2) then
+								slv_fsm_state <= S_4; 
+                     --else	
+								--slv_fsm_state <= S_0;
+                     end if;
+         when S_4 =>	if (reset = '0') and (slv_switch_3 = pattern_3) then
+								slv_fsm_state <= S_5; 
+								clock_start_signal <= '0';
+							end if;
+			
+         when S_5 =>	if (reset = '0')  then
+								slv_fsm_state <= S_5; 
+			            --else
+								--slv_fsm_state <= S_0;
+                     end if;
+         
+         when others   => slv_fsm_state <= S_0;
+      end case;
+   end process p_FSM_transitions; -- state_table
+
+   
+
+   set_state_out: process (slv_fsm_state) -- drive the red LEDs for each state
+   begin
+      case slv_fsm_state IS
+         when S_0 =>   state_out(2 downto 0) <= "000";
+         when S_1 =>   state_out(2 downto 0) <= "001";
+         when S_2 =>   state_out(2 downto 0) <= "010";
+         when S_3 =>   state_out(2 downto 0) <= "011";
+         when S_4 =>   state_out(2 downto 0) <= "100";
+			when S_5 =>   state_out(2 downto 0) <= "101";
+			
+         end case;
+   end process set_state_out; -- LEDs
+
+end architecture a_my_FSM;

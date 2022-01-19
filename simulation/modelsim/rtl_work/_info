@@ -1,0 +1,369 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/simulation/modelsim
+Ee_7_seg
+Z1 w1627674488
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8C:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/e_7_seg.vhd
+Z5 FC:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/e_7_seg.vhd
+l0
+L6
+VNF3ASGNOSdN86fF3^jjJc0
+!s100 li;ND=@OGobWH1mBKG_n33
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1640793233
+!i10b 1
+Z8 !s108 1640793233.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/e_7_seg.vhd|
+Z10 !s107 C:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/e_7_seg.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aa_7_seg
+R2
+R3
+DEx4 work 7 e_7_seg 0 22 NF3ASGNOSdN86fF3^jjJc0
+l36
+L15
+V;D3^N?fYm[0i;IF4zSF2o3
+!s100 :KU[>5_02edPjXDoW?I=G3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ee_arithmetic_operations
+Z13 w1627667054
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z15 8../../e_arithmetic_operations.vhd
+Z16 F../../e_arithmetic_operations.vhd
+l0
+L7
+VXL2e>dXEOBPe<9<;BmndL2
+!s100 EKMZPJ6HMQ6J81;7n=VAC2
+R6
+32
+Z17 !s110 1640793264
+!i10b 1
+Z18 !s108 1640793264.000000
+Z19 !s90 -reportprogress|300|-work|work|../../e_arithmetic_operations.vhd|
+Z20 !s107 ../../e_arithmetic_operations.vhd|
+!i113 1
+Z21 o-work work
+R12
+Aa_arithmetic_operations
+R14
+R2
+R3
+DEx4 work 23 e_arithmetic_operations 0 22 XL2e>dXEOBPe<9<;BmndL2
+l26
+L21
+VR@8@]53;8YTB>fibX9O?J0
+!s100 _icKjd5]NzUbLK>iSYMi_2
+R6
+32
+R17
+!i10b 1
+R18
+R19
+R20
+!i113 1
+R21
+R12
+Ee_combine_int
+Z22 w1627663732
+R14
+R2
+R3
+R0
+Z23 8../../e_combine_int.vhd
+Z24 F../../e_combine_int.vhd
+l0
+L7
+VfgIoPUHHkSD_1?=hYoS_A0
+!s100 QbXFJX]dkQl3koRV2:9WH2
+R6
+32
+R17
+!i10b 1
+R18
+Z25 !s90 -reportprogress|300|-work|work|../../e_combine_int.vhd|
+Z26 !s107 ../../e_combine_int.vhd|
+!i113 1
+R21
+R12
+Aa_combine_int
+R14
+R2
+R3
+DEx4 work 13 e_combine_int 0 22 fgIoPUHHkSD_1?=hYoS_A0
+l24
+L20
+VFLRMl<eW0Ke=e9^e@c<7e3
+!s100 n``1F7BnoNB8z@mFBGSWJ0
+R6
+32
+R17
+!i10b 1
+R18
+R25
+R26
+!i113 1
+R21
+R12
+Ee_convert_sw_to_integer
+Z27 w1627654340
+R2
+R3
+R0
+Z28 8../../e_convert_Sw_to_integer.vhd
+Z29 F../../e_convert_Sw_to_integer.vhd
+l0
+L5
+VOR:Q[D2B2b?9=TU<;]@iF0
+!s100 :jP4k1N6j8XP7=9T7fCe]3
+R6
+32
+R17
+!i10b 1
+R18
+Z30 !s90 -reportprogress|300|-work|work|../../e_convert_Sw_to_integer.vhd|
+Z31 !s107 ../../e_convert_Sw_to_integer.vhd|
+!i113 1
+R21
+R12
+Aa_convert_sw_to_integer
+R2
+R3
+DEx4 work 23 e_convert_sw_to_integer 0 22 OR:Q[D2B2b?9=TU<;]@iF0
+l25
+L11
+Vl_9PLl88Rc>^0`Y37QIie0
+!s100 OJ2O3=GN3hj;DN2:V_nXk3
+R6
+32
+R17
+!i10b 1
+R18
+R30
+R31
+!i113 1
+R21
+R12
+Ee_get_digit_from_int
+Z32 w1627678952
+R14
+R2
+R3
+R0
+Z33 8C:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/e_separate_digits.vhd
+Z34 FC:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/e_separate_digits.vhd
+l0
+L5
+Vj2PfU_@jX6:=;9FALA6d91
+!s100 =[Tz@_5m`kFGn2SNB<imS2
+R6
+31
+R7
+!i10b 1
+R8
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/e_separate_digits.vhd|
+Z36 !s107 C:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/e_separate_digits.vhd|
+!i113 1
+R11
+R12
+Aa_get_digit_from_int
+R14
+R2
+R3
+DEx4 work 20 e_get_digit_from_int 0 22 j2PfU_@jX6:=;9FALA6d91
+l25
+L16
+Vb>MDW9I:0WWDZk63c2^AM0
+!s100 dmKfBbea7W3DJoJnNEVTd1
+R6
+31
+R7
+!i10b 1
+R8
+R35
+R36
+!i113 1
+R11
+R12
+Ee_my_calculator
+Z37 w1627678758
+R14
+R2
+R3
+R0
+Z38 8../../e_my_calculator.vhd
+Z39 F../../e_my_calculator.vhd
+l0
+L7
+VX8nN9AYSN;eVU?jaNag6j1
+!s100 ^`:bmoTh65:gE7MCPOBkQ2
+R6
+32
+R17
+!i10b 1
+R18
+Z40 !s90 -reportprogress|300|-work|work|../../e_my_calculator.vhd|
+Z41 !s107 ../../e_my_calculator.vhd|
+!i113 1
+R21
+R12
+Aa_my_calculator
+R14
+R2
+R3
+DEx4 work 15 e_my_calculator 0 22 X8nN9AYSN;eVU?jaNag6j1
+l133
+L30
+V=mm1h3<C@;:<3h^I7JIl:3
+!s100 inVVFgA=STJ]CaYRWUn7=3
+R6
+32
+R17
+!i10b 1
+R18
+R40
+R41
+!i113 1
+R21
+R12
+Ee_my_calculator_vhd_tst
+Z42 w1627679084
+R2
+R3
+R0
+Z43 8e_my_calculator_vhd_tst.vht
+Z44 Fe_my_calculator_vhd_tst.vht
+l0
+L30
+VR8loZ]bgW8I>d?PQd_@dg2
+!s100 L0YJ3DYW7lY_if4;I2dn^1
+R6
+32
+R17
+!i10b 1
+R18
+Z45 !s90 -reportprogress|300|-work|work|e_my_calculator_vhd_tst.vht|
+Z46 !s107 e_my_calculator_vhd_tst.vht|
+!i113 1
+R21
+R12
+Ae_my_calculator_arch
+R2
+R3
+DEx4 work 23 e_my_calculator_vhd_tst 0 22 R8loZ]bgW8I>d?PQd_@dg2
+l59
+L32
+VS1Q:LWKNW[n>i0234l?mE3
+!s100 1D6[z:OZX4bFeN2naEj6H3
+R6
+32
+R17
+!i10b 1
+R18
+R45
+R46
+!i113 1
+R21
+R12
+Ee_my_finite_sm
+Z47 w1627659960
+R2
+R3
+R0
+Z48 8../../e_my_finite_SM.vhd
+Z49 F../../e_my_finite_SM.vhd
+l0
+L5
+Va;M1VCCzmhPzV24TeA^zL0
+!s100 <oOiEN3GM_3D6Iz:UzWJ50
+R6
+32
+R17
+!i10b 1
+R18
+Z50 !s90 -reportprogress|300|-work|work|../../e_my_finite_SM.vhd|
+Z51 !s107 ../../e_my_finite_SM.vhd|
+!i113 1
+R21
+R12
+Aa_my_finite_sm
+R2
+R3
+DEx4 work 14 e_my_finite_sm 0 22 a;M1VCCzmhPzV24TeA^zL0
+l33
+L14
+Vg82P3I];_7;=F>LA1GH:60
+!s100 =Fz?gfmZRG4Ai?9aIj4Ug3
+R6
+32
+R17
+!i10b 1
+R18
+R50
+R51
+!i113 1
+R21
+R12
+Ee_my_flipflop
+Z52 w1627610652
+R2
+R3
+R0
+Z53 8../../e_my_flipflop.vhd
+Z54 F../../e_my_flipflop.vhd
+l0
+L5
+V0;S]kX^@VlCSTO<G]^71i1
+!s100 6:6DYT@0Ez7fU_TW4PSVI1
+R6
+32
+R17
+!i10b 1
+R18
+Z55 !s90 -reportprogress|300|-work|work|../../e_my_flipflop.vhd|
+Z56 !s107 ../../e_my_flipflop.vhd|
+!i113 1
+R21
+R12
+Aa_my_flipflop
+R2
+R3
+DEx4 work 13 e_my_flipflop 0 22 0;S]kX^@VlCSTO<G]^71i1
+l14
+L13
+Vd1^mBUAhaKGmcgK81F4Rj1
+!s100 HaW@491jh5SWQCg^]S6o[0
+R6
+32
+R17
+!i10b 1
+R18
+R55
+R56
+!i113 1
+R21
+R12
