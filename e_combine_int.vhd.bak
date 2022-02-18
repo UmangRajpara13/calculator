@@ -4,22 +4,22 @@ use ieee.numeric_std.all;
 
 
 
-entity e_int_adder is 
+entity e_combine_int is 
 port
 	(	
-	 slv_x :in std_logic_vector(7 downto 0);
-	 slv_y :in std_logic_vector(7 downto 0);
+	 slv_x :in integer;
+	 slv_y :in integer;
 	 
-	 slv_out_signed :out std_logic_vector(15 downto 0);
-	 slv_out_unsigned: out std_logic_vector(15 downto 0)
+	 
+	 slv_out_unsigned: out integer
 
 	);
-end entity e_int_adder;
+end entity e_combine_int;
 
 
-architecture a_int_adder of e_int_adder is
-	signal slv_out_temp: std_logic_vector(15 downto 0);
-	signal slv_add_temp: std_logic_vector(7 downto 0);
+architecture a_combine_int of e_combine_int is
+	signal slv_out_temp: integer;
+	signal slv_add_temp: integer;
 
 begin
 	
@@ -29,11 +29,11 @@ begin
 
 	
 		
-	slv_out_temp <= std_logic_vector (signed(slv_x) *  10);  
-	slv_out_signed <=	std_logic_vector(signed(slv_out_temp) + signed(slv_y));
-	slv_add_temp <= std_logic_vector (signed(slv_x) + signed(slv_y));
-	slv_out_unsigned <= "00000000" & slv_add_temp;
-end architecture a_int_adder;
+	slv_out_temp <= slv_x *  10;  
+	slv_out_unsigned <=	slv_out_temp + slv_y;
+--	slv_add_temp <= std_logic_vector (unsigned(slv_x) + unsigned(slv_y));
+	--slv_out_unsigned <= "00000000" & slv_add_temp;
+end architecture a_combine_int;
 
 
 

@@ -1,16 +1,16 @@
 |e_my_calculator
 clk => e_7_seg:HEX_1.clk
-clk => e_my_finite_SM:finite_state_machine.clk
-clk => e_my_FlipFlop:flip_flop_1.Clk
-clk => e_my_FlipFlop:flip_flop_2.Clk
-clk => e_my_FlipFlop:flip_flop_3.Clk
-clk => e_my_FlipFlop:flip_flop_4.Clk
-clk => e_my_FlipFlop:flip_flop_5.Clk
-clk => e_my_FlipFlop:flip_flop_6.Clk
-clk => e_my_FlipFlop:flip_flop_7.Clk
-clk => e_my_FlipFlop:flip_flop_8.Clk
-clk => e_my_FlipFlop:flip_flop_9.Clk
-clk => e_my_FlipFlop:flip_flop_10.Clk
+clk => e_finite_sm:finite_state_machine.clk
+clk => e_flipflop:flip_flop_1.Clk
+clk => e_flipflop:flip_flop_2.Clk
+clk => e_flipflop:flip_flop_3.Clk
+clk => e_flipflop:flip_flop_4.Clk
+clk => e_flipflop:flip_flop_5.Clk
+clk => e_flipflop:flip_flop_6.Clk
+clk => e_flipflop:flip_flop_7.Clk
+clk => e_flipflop:flip_flop_8.Clk
+clk => e_flipflop:flip_flop_9.Clk
+clk => e_flipflop:flip_flop_10.Clk
 clk => e_7_seg:HEX_2.clk
 clk => e_7_seg:HEX_3.clk
 clk => e_7_seg:HEX_4.clk
@@ -29,43 +29,43 @@ LEDR[6] << LEDR[6].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[7] << LEDR[7].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[8] << LEDR[8].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[9] << LEDR[9].DB_MAX_OUTPUT_PORT_TYPE
-SW[0] => e_my_finite_SM:finite_state_machine.switch_input[0]
-SW[0] => e_convert_Sw_to_integer:convert_digit.switch_input[0]
+SW[0] => e_finite_sm:finite_state_machine.switch_input[0]
+SW[0] => e_convert_sw_to_integer:convert_digit.switch_input[0]
 SW[0] => Equal5.IN9
-SW[1] => e_my_finite_SM:finite_state_machine.switch_input[1]
-SW[1] => e_convert_Sw_to_integer:convert_digit.switch_input[1]
+SW[1] => e_finite_sm:finite_state_machine.switch_input[1]
+SW[1] => e_convert_sw_to_integer:convert_digit.switch_input[1]
 SW[1] => Equal5.IN8
-SW[2] => e_my_finite_SM:finite_state_machine.switch_input[2]
-SW[2] => e_convert_Sw_to_integer:convert_digit.switch_input[2]
+SW[2] => e_finite_sm:finite_state_machine.switch_input[2]
+SW[2] => e_convert_sw_to_integer:convert_digit.switch_input[2]
 SW[2] => Equal5.IN7
-SW[3] => e_my_finite_SM:finite_state_machine.switch_input[3]
-SW[3] => e_convert_Sw_to_integer:convert_digit.switch_input[3]
+SW[3] => e_finite_sm:finite_state_machine.switch_input[3]
+SW[3] => e_convert_sw_to_integer:convert_digit.switch_input[3]
 SW[3] => Equal5.IN6
-SW[4] => e_my_finite_SM:finite_state_machine.switch_input[4]
-SW[4] => e_convert_Sw_to_integer:convert_digit.switch_input[4]
+SW[4] => e_finite_sm:finite_state_machine.switch_input[4]
+SW[4] => e_convert_sw_to_integer:convert_digit.switch_input[4]
 SW[4] => Equal5.IN5
-SW[5] => e_my_finite_SM:finite_state_machine.switch_input[5]
-SW[5] => e_convert_Sw_to_integer:convert_digit.switch_input[5]
+SW[5] => e_finite_sm:finite_state_machine.switch_input[5]
+SW[5] => e_convert_sw_to_integer:convert_digit.switch_input[5]
 SW[5] => Equal5.IN4
-SW[6] => e_my_finite_SM:finite_state_machine.switch_input[6]
-SW[6] => e_convert_Sw_to_integer:convert_digit.switch_input[6]
+SW[6] => e_finite_sm:finite_state_machine.switch_input[6]
+SW[6] => e_convert_sw_to_integer:convert_digit.switch_input[6]
 SW[6] => Equal5.IN3
-SW[7] => e_my_finite_SM:finite_state_machine.switch_input[7]
-SW[7] => e_convert_Sw_to_integer:convert_digit.switch_input[7]
+SW[7] => e_finite_sm:finite_state_machine.switch_input[7]
+SW[7] => e_convert_sw_to_integer:convert_digit.switch_input[7]
 SW[7] => Equal5.IN2
-SW[8] => e_my_finite_SM:finite_state_machine.switch_input[8]
-SW[8] => e_convert_Sw_to_integer:convert_digit.switch_input[8]
+SW[8] => e_finite_sm:finite_state_machine.switch_input[8]
+SW[8] => e_convert_sw_to_integer:convert_digit.switch_input[8]
 SW[8] => Equal5.IN1
-SW[9] => e_my_finite_SM:finite_state_machine.switch_input[9]
-SW[9] => e_convert_Sw_to_integer:convert_digit.switch_input[9]
+SW[9] => e_finite_sm:finite_state_machine.switch_input[9]
+SW[9] => e_convert_sw_to_integer:convert_digit.switch_input[9]
 SW[9] => Equal5.IN0
-KEY[0] => e_my_finite_SM:finite_state_machine.push_btn_input[0]
+KEY[0] => e_finite_sm:finite_state_machine.push_btn_input[0]
 KEY[0] => e_arithmetic_operations:operation.slv_push_btn[0]
-KEY[1] => e_my_finite_SM:finite_state_machine.push_btn_input[1]
+KEY[1] => e_finite_sm:finite_state_machine.push_btn_input[1]
 KEY[1] => e_arithmetic_operations:operation.slv_push_btn[1]
-KEY[2] => e_my_finite_SM:finite_state_machine.push_btn_input[2]
+KEY[2] => e_finite_sm:finite_state_machine.push_btn_input[2]
 KEY[2] => e_arithmetic_operations:operation.slv_push_btn[2]
-KEY[3] => e_my_finite_SM:finite_state_machine.push_btn_input[3]
+KEY[3] => e_finite_sm:finite_state_machine.push_btn_input[3]
 KEY[3] => e_arithmetic_operations:operation.slv_push_btn[3]
 HEX0[0] << e_7_seg:HEX_1.sev_seg_out[0]
 HEX0[1] << e_7_seg:HEX_1.sev_seg_out[1]
@@ -134,7 +134,7 @@ slv_out_unsigned[14] << slv_out_unsigned[14].DB_MAX_OUTPUT_PORT_TYPE
 slv_out_unsigned[15] << slv_out_unsigned[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_finite_SM:finite_state_machine
+|e_my_calculator|e_finite_sm:finite_state_machine
 clk => slv_fsm_state~8.DATAIN
 reset => slv_fsm_state.OUTPUTSELECT
 reset => slv_fsm_state.OUTPUTSELECT
@@ -165,7 +165,7 @@ output_state[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 output_state[3] <= <GND>
 
 
-|e_my_calculator|e_convert_Sw_to_integer:convert_digit
+|e_my_calculator|e_convert_sw_to_integer:convert_digit
 switch_input[0] => Equal0.IN19
 switch_input[0] => Equal1.IN19
 switch_input[0] => Equal2.IN19
@@ -562,7 +562,7 @@ slv_out_unsigned[30] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 slv_out_unsigned[31] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_1
+|e_my_calculator|e_flipflop:flip_flop_1
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
@@ -725,7 +725,7 @@ buff[30] <= buff[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 buff[31] <= buff[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_2
+|e_my_calculator|e_flipflop:flip_flop_2
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
@@ -888,7 +888,7 @@ buff[30] <= buff[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 buff[31] <= buff[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_3
+|e_my_calculator|e_flipflop:flip_flop_3
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
@@ -1051,7 +1051,7 @@ buff[30] <= buff[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 buff[31] <= buff[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_4
+|e_my_calculator|e_flipflop:flip_flop_4
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
@@ -1214,7 +1214,7 @@ buff[30] <= buff[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 buff[31] <= buff[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_5
+|e_my_calculator|e_flipflop:flip_flop_5
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
@@ -1377,7 +1377,7 @@ buff[30] <= buff[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 buff[31] <= buff[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_6
+|e_my_calculator|e_flipflop:flip_flop_6
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
@@ -1540,7 +1540,7 @@ buff[30] <= buff[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 buff[31] <= buff[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_7
+|e_my_calculator|e_flipflop:flip_flop_7
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
@@ -1703,7 +1703,7 @@ buff[30] <= buff[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 buff[31] <= buff[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_8
+|e_my_calculator|e_flipflop:flip_flop_8
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
@@ -1866,7 +1866,7 @@ buff[30] <= buff[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 buff[31] <= buff[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_9
+|e_my_calculator|e_flipflop:flip_flop_9
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
@@ -2029,7 +2029,7 @@ buff[30] <= buff[30]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 buff[31] <= buff[31]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_my_FlipFlop:flip_flop_10
+|e_my_calculator|e_flipflop:flip_flop_10
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT
 enable => buff.OUTPUTSELECT

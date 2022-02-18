@@ -2,29 +2,27 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 
-entity e_convert_Sw_to_integer is 
+entity e_convert_sw_to_integer is 
    port (  switch_input   : in    std_logic_vector(9 downto 0);
            out_integer      : out   integer
 				);
-end entity e_convert_Sw_to_integer ;
+end entity e_convert_sw_to_integer ;
 
-architecture a_convert_Sw_to_integer of e_convert_Sw_to_integer is
+architecture a_convert_sw_to_integer of e_convert_sw_to_integer is
 
----- Declaration Part -----------------------------------------------
+---- Declaration Part ----
 
 -- Signal Declarations
    
-
 -- Type Declarations
-  signal slv_integer : integer; 
+   signal slv_integer : integer; 
+	
 ---- Synthesis Attribute Declarations
---	attribute syn_encoding: string;
---	attribute syn_encoding of t_fsm_states : type is "0000 0001 0010 0011 0100 0101 0110 0111 1000";
 	signal pattern_0,pattern_1,pattern_2,pattern_3 : std_logic_vector(3 downto 0);
 
 begin
 
----- Assignment Part ------------------------------------------------
+---- Assignment Part ----
 
 -- Concurrent Assignments:
    out_integer <= slv_integer;
@@ -45,6 +43,6 @@ begin
 			when "0000000001" =>   slv_integer <= 0;
 			when others       =>   slv_integer <= 10;
          end case;
-   end process select_integer; -- LEDs
+   end process select_integer; -- leds
 
-end architecture a_convert_Sw_to_integer;
+end architecture a_convert_sw_to_integer;

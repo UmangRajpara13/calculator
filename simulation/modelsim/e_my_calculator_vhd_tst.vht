@@ -82,58 +82,55 @@ always: process
 	end procedure P_sync_app;                                       
 	
 	
-	procedure add_test is
+	procedure test is
 	
 		begin
 		wait for 50ns;
 		SW (0) <= '1';
 		
-		wait for 48ns;
+		wait for 50ns;
 	 	SW (0) <= '0';
 	
 		wait for 100ns;
 		SW (1) <= '1';
 		
-		wait for 48ns;
+		wait for 50ns;
 		SW (1) <= '0';
 		wait for 100ns;
 		
 		SW (2) <= '1';
 		
-		wait for 48ns;
+		wait for 50ns;
 		SW (2) <= '0';
 		wait for 100ns;
 		
 		SW (1) <= '1';
 		
-		wait for 48ns;
+		wait for 50ns;
 		SW (1) <= '0';
 		wait for 100ns;
 		
 		SW (0) <= '1';
 		
-		wait for 48ns;
+		wait for 50ns;
 		SW (0) <= '0';
 		
-		
 		Key <= "1000";
-		wait for 148ns;
+		wait for 150ns;
 		
 		Key <= "0010";
-		wait for 148ns;
+		wait for 150ns;
 		
 		Key <= "0100";
-		wait for 148ns;
+		wait for 150ns;
 		
 		Key <= "0001";
-		wait for 148ns;
+		wait for 150ns;
 		
-		
-		
-		end procedure add_test;
+		end procedure test;
 	
 	begin
 	P_sync_app(5);
-	add_test;
+	test;
 end process always;                 
 END e_my_calculator_arch;

@@ -1,0 +1,28 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+
+
+entity e_flipflop is
+	port (enable : in std_logic;
+			input	 : in integer;
+			Rst	 : in std_logic;
+			Clk	 : in std_logic;
+			buff 		 : buffer integer);
+end e_flipflop;
+
+architecture a_flipflop of e_flipflop is
+begin
+	p_flipflop: process (buff, clk, Rst, enable) is
+	begin
+		if (rising_edge(Clk)) then 
+		if (Enable = '1') then
+			buff <= input ;
+		end if;
+		if (Rst = '1') then
+			buff <=  0;
+		else null;
+		end if;
+		end if;
+	end process p_flipflop;
+end a_flipflop;

@@ -1,5 +1,5 @@
 Fitter report for e_my_calculator
-Sat Dec 25 11:44:17 2021
+Fri Feb 18 18:44:38 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Fitter Summary                                                                ;
 +---------------------------------+---------------------------------------------+
-; Fitter Status                   ; Successful - Sat Dec 25 11:44:17 2021       ;
+; Fitter Status                   ; Successful - Fri Feb 18 18:44:38 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; e_my_calculator                             ;
 ; Top-level Entity Name           ; e_my_calculator                             ;
@@ -154,14 +154,14 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.20        ;
+; Average used               ; 1.17        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   7.0%      ;
-;     Processor 3            ;   6.7%      ;
-;     Processor 4            ;   6.6%      ;
+;     Processor 2            ;   6.0%      ;
+;     Processor 3            ;   5.6%      ;
+;     Processor 4            ;   5.5%      ;
 +----------------------------+-------------+
 
 
@@ -212,7 +212,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/output_files/e_my_calculator.pin.
+The pin-out file can be found in C:/Users/umang/Desktop/my new/output_files/e_my_calculator.pin.
 
 
 +---------------------------------------------------------------------------------------------+
@@ -1646,7 +1646,14 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;                |alt_u_div_o2f:divider|     ; 630.4 (630.4)        ; 642.5 (642.5)                    ; 13.2 (13.2)                                       ; 1.1 (1.1)                        ; 0.0 (0.0)            ; 1251 (1251)         ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_arithmetic_operations:operation|lpm_divide:Div0|lpm_divide_rqo:auto_generated|abs_divider_4dg:divider|alt_u_div_o2f:divider   ; alt_u_div_o2f           ; work         ;
 ;    |e_combine_int:combine_digits_1|        ; 2.7 (2.7)            ; 2.7 (2.7)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_combine_int:combine_digits_1                                                                                                  ; e_combine_int           ; work         ;
 ;    |e_combine_int:combine_digits_2|        ; 2.3 (2.3)            ; 2.8 (2.8)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 7 (7)               ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_combine_int:combine_digits_2                                                                                                  ; e_combine_int           ; work         ;
-;    |e_convert_Sw_to_integer:convert_digit| ; 12.5 (12.5)          ; 14.0 (14.0)                      ; 1.5 (1.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (21)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_convert_Sw_to_integer:convert_digit                                                                                           ; e_convert_Sw_to_integer ; work         ;
+;    |e_convert_sw_to_integer:convert_digit| ; 12.5 (12.5)          ; 14.0 (14.0)                      ; 1.5 (1.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 21 (21)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_convert_sw_to_integer:convert_digit                                                                                           ; e_convert_sw_to_integer ; work         ;
+;    |e_finite_sm:finite_state_machine|      ; 4.0 (4.0)            ; 4.2 (4.2)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_finite_sm:finite_state_machine                                                                                                ; e_finite_sm             ; work         ;
+;    |e_flipflop:flip_flop_1|                ; 1.2 (1.2)            ; 1.7 (1.7)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_1                                                                                                          ; e_flipflop              ; work         ;
+;    |e_flipflop:flip_flop_2|                ; 1.2 (1.2)            ; 1.3 (1.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_2                                                                                                          ; e_flipflop              ; work         ;
+;    |e_flipflop:flip_flop_3|                ; 1.2 (1.2)            ; 1.2 (1.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_3                                                                                                          ; e_flipflop              ; work         ;
+;    |e_flipflop:flip_flop_4|                ; 1.0 (1.0)            ; 1.7 (1.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_4                                                                                                          ; e_flipflop              ; work         ;
+;    |e_flipflop:flip_flop_8|                ; 8.1 (8.1)            ; 8.1 (8.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 32 (32)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_8                                                                                                          ; e_flipflop              ; work         ;
+;    |e_flipflop:flip_flop_9|                ; 8.1 (8.1)            ; 8.1 (8.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 32 (32)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_9                                                                                                          ; e_flipflop              ; work         ;
 ;    |e_get_digit_from_int:divide_digits|    ; 2204.3 (63.7)        ; 2212.8 (63.5)                    ; 16.0 (0.0)                                        ; 7.5 (0.2)                        ; 0.0 (0.0)            ; 4392 (142)          ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_get_digit_from_int:divide_digits                                                                                              ; e_get_digit_from_int    ; work         ;
 ;       |lpm_divide:Div0|                    ; 318.4 (0.0)          ; 322.0 (0.0)                      ; 4.5 (0.0)                                         ; 0.9 (0.0)                        ; 0.0 (0.0)            ; 640 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_get_digit_from_int:divide_digits|lpm_divide:Div0                                                                              ; lpm_divide              ; work         ;
 ;          |lpm_divide_epo:auto_generated|   ; 318.4 (0.0)          ; 322.0 (0.0)                      ; 4.5 (0.0)                                         ; 0.9 (0.0)                        ; 0.0 (0.0)            ; 640 (0)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_get_digit_from_int:divide_digits|lpm_divide:Div0|lpm_divide_epo:auto_generated                                                ; lpm_divide_epo          ; work         ;
@@ -1668,13 +1675,6 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 ;             |abs_divider_4dg:divider|      ; 725.3 (42.2)         ; 724.7 (42.2)                     ; 2.5 (0.5)                                         ; 3.1 (0.5)                        ; 0.0 (0.0)            ; 1433 (64)           ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_get_digit_from_int:divide_digits|lpm_divide:Mod1|lpm_divide_uio:auto_generated|abs_divider_4dg:divider                        ; abs_divider_4dg         ; work         ;
 ;                |alt_u_div_o2f:divider|     ; 667.1 (667.1)        ; 666.5 (666.5)                    ; 2.0 (2.0)                                         ; 2.6 (2.6)                        ; 0.0 (0.0)            ; 1337 (1337)         ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_get_digit_from_int:divide_digits|lpm_divide:Mod1|lpm_divide_uio:auto_generated|abs_divider_4dg:divider|alt_u_div_o2f:divider  ; alt_u_div_o2f           ; work         ;
 ;                |lpm_abs_4p9:my_abs_num|    ; 16.0 (16.0)          ; 16.0 (16.0)                      ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 32 (32)             ; 0 (0)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_get_digit_from_int:divide_digits|lpm_divide:Mod1|lpm_divide_uio:auto_generated|abs_divider_4dg:divider|lpm_abs_4p9:my_abs_num ; lpm_abs_4p9             ; work         ;
-;    |e_my_FlipFlop:flip_flop_1|             ; 1.2 (1.2)            ; 1.7 (1.7)                        ; 0.5 (0.5)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_my_FlipFlop:flip_flop_1                                                                                                       ; e_my_FlipFlop           ; work         ;
-;    |e_my_FlipFlop:flip_flop_2|             ; 1.2 (1.2)            ; 1.3 (1.3)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_my_FlipFlop:flip_flop_2                                                                                                       ; e_my_FlipFlop           ; work         ;
-;    |e_my_FlipFlop:flip_flop_3|             ; 1.2 (1.2)            ; 1.2 (1.2)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_my_FlipFlop:flip_flop_3                                                                                                       ; e_my_FlipFlop           ; work         ;
-;    |e_my_FlipFlop:flip_flop_4|             ; 1.0 (1.0)            ; 1.7 (1.7)                        ; 0.7 (0.7)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 4 (4)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_my_FlipFlop:flip_flop_4                                                                                                       ; e_my_FlipFlop           ; work         ;
-;    |e_my_FlipFlop:flip_flop_8|             ; 8.1 (8.1)            ; 8.1 (8.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 32 (32)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_my_FlipFlop:flip_flop_8                                                                                                       ; e_my_FlipFlop           ; work         ;
-;    |e_my_FlipFlop:flip_flop_9|             ; 8.1 (8.1)            ; 8.1 (8.1)                        ; 0.0 (0.0)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 0 (0)               ; 32 (32)                   ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_my_FlipFlop:flip_flop_9                                                                                                       ; e_my_FlipFlop           ; work         ;
-;    |e_my_finite_SM:finite_state_machine|   ; 4.0 (4.0)            ; 4.2 (4.2)                        ; 0.2 (0.2)                                         ; 0.0 (0.0)                        ; 0.0 (0.0)            ; 6 (6)               ; 7 (7)                     ; 0 (0)         ; 0                 ; 0     ; 0          ; 0    ; 0            ; |e_my_calculator|e_my_finite_SM:finite_state_machine                                                                                             ; e_my_finite_SM          ; work         ;
 +--------------------------------------------+----------------------+----------------------------------+---------------------------------------------------+----------------------------------+----------------------+---------------------+---------------------------+---------------+-------------------+-------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -1783,87 +1783,87 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Source Pin / Fanout                                     ; Pad To Core Index ; Setting ;
 +---------------------------------------------------------+-------------------+---------+
 ; SW[1]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr2~0  ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal8~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal3~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~0 ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal7~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal2~1   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal6~1   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr2~0  ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal8~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal3~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~0 ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal7~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal2~1   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal6~1   ; 0                 ; 0       ;
 ; SW[8]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr2~0  ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal8~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal3~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~0 ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal7~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal2~1   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal6~1   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr2~0  ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal8~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal3~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~0 ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal7~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal2~1   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal6~1   ; 1                 ; 0       ;
 ; SW[7]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr2~0  ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal8~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal6~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal3~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~0 ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal7~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal2~1   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr2~0  ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal8~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal6~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal3~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~0 ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal7~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal2~1   ; 0                 ; 0       ;
 ; SW[9]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr2~0  ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal8~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal6~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal3~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~0 ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal7~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal2~1   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr2~0  ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal8~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal6~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal3~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~0 ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal7~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal2~1   ; 1                 ; 0       ;
 ; SW[4]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal0~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal2~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal4~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal1~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~3 ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal5~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr1~0  ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal0~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal2~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal4~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal1~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~3 ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal5~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr1~0  ; 0                 ; 0       ;
 ; SW[5]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal0~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal2~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal4~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal1~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~3 ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal5~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr1~0  ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal0~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal2~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal4~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal1~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~3 ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal5~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr1~0  ; 1                 ; 0       ;
 ; SW[2]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal0~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal2~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal4~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~2 ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~3 ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal5~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr1~0  ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal0~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal2~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal4~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~2 ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~3 ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal5~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr1~0  ; 1                 ; 0       ;
 ; SW[0]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal0~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal2~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal4~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~2 ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~3 ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal5~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr1~0  ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal0~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal2~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal4~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~2 ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~3 ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal5~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr1~0  ; 0                 ; 0       ;
 ; SW[3]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal0~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal2~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal3~0   ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~2 ; 0                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal5~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal0~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal2~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal3~0   ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~2 ; 0                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal5~0   ; 0                 ; 0       ;
 ; SW[6]                                                   ;                   ;         ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal0~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|Equal3~0   ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideNor0~2 ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr1    ; 1                 ; 0       ;
-;      - e_convert_Sw_to_integer:convert_digit|WideOr2~0  ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal0~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|Equal3~0   ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideNor0~2 ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr1    ; 1                 ; 0       ;
+;      - e_convert_sw_to_integer:convert_digit|WideOr2~0  ; 1                 ; 0       ;
 ; clk                                                     ;                   ;         ;
 ; KEY[2]                                                  ;                   ;         ;
 ;      - e_arithmetic_operations:operation|Mux0~0         ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~2         ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~3         ; 1                 ; 0       ;
-;      - e_my_finite_SM:finite_state_machine|Selector5~0  ; 1                 ; 0       ;
+;      - e_finite_sm:finite_state_machine|Selector5~0     ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux1~0         ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~5         ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux29~0        ; 1                 ; 0       ;
@@ -1872,7 +1872,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - e_arithmetic_operations:operation|Mux0~0         ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~2         ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~3         ; 0                 ; 0       ;
-;      - e_my_finite_SM:finite_state_machine|Selector5~0  ; 0                 ; 0       ;
+;      - e_finite_sm:finite_state_machine|Selector5~0     ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux1~0         ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~5         ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux29~0        ; 0                 ; 0       ;
@@ -1881,7 +1881,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - e_arithmetic_operations:operation|Mux0~0         ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~2         ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~3         ; 0                 ; 0       ;
-;      - e_my_finite_SM:finite_state_machine|Selector5~0  ; 0                 ; 0       ;
+;      - e_finite_sm:finite_state_machine|Selector5~0     ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux1~0         ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~5         ; 0                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux29~0        ; 0                 ; 0       ;
@@ -1890,7 +1890,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;      - e_arithmetic_operations:operation|Mux0~0         ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~2         ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~3         ; 1                 ; 0       ;
-;      - e_my_finite_SM:finite_state_machine|Selector5~0  ; 1                 ; 0       ;
+;      - e_finite_sm:finite_state_machine|Selector5~0     ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux1~0         ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux0~5         ; 1                 ; 0       ;
 ;      - e_arithmetic_operations:operation|Mux29~0        ; 1                 ; 0       ;
@@ -1898,24 +1898,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------------------------------------+-------------------+---------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                             ;
-+----------------------------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                         ; Location             ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+----------------------------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk                                          ; PIN_Y27              ; 87      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
-; e_get_digit_from_int:divide_digits|digit1~0  ; MLABCELL_X21_Y35_N54 ; 31      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; e_get_digit_from_int:divide_digits|digit2~0  ; LABCELL_X18_Y38_N36  ; 31      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
-; e_my_finite_SM:finite_state_machine|Equal0~0 ; MLABCELL_X34_Y36_N42 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; slv_enable_1                                 ; LABCELL_X33_Y36_N24  ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; slv_enable_1~1                               ; MLABCELL_X34_Y36_N48 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; slv_enable_2                                 ; MLABCELL_X34_Y36_N15 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; slv_enable_2~0                               ; MLABCELL_X34_Y36_N57 ; 2       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; slv_enable_3                                 ; MLABCELL_X34_Y36_N54 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; slv_enable_3~1                               ; MLABCELL_X34_Y36_N30 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-; slv_enable_4                                 ; MLABCELL_X34_Y36_N45 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; slv_enable_4~1                               ; MLABCELL_X34_Y36_N9  ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
-+----------------------------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                            ;
++---------------------------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                        ; Location             ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++---------------------------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk                                         ; PIN_Y27              ; 87      ; Clock        ; yes    ; Global Clock         ; GCLK10           ; --                        ;
+; e_finite_sm:finite_state_machine|Equal0~0   ; MLABCELL_X34_Y36_N42 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; e_get_digit_from_int:divide_digits|digit1~0 ; MLABCELL_X21_Y35_N54 ; 31      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; e_get_digit_from_int:divide_digits|digit2~0 ; LABCELL_X18_Y38_N36  ; 31      ; Sync. load   ; no     ; --                   ; --               ; --                        ;
+; slv_enable_1                                ; LABCELL_X33_Y36_N24  ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; slv_enable_1~1                              ; MLABCELL_X34_Y36_N48 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; slv_enable_2                                ; MLABCELL_X34_Y36_N15 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; slv_enable_2~0                              ; MLABCELL_X34_Y36_N57 ; 2       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; slv_enable_3                                ; MLABCELL_X34_Y36_N54 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; slv_enable_3~1                              ; MLABCELL_X34_Y36_N30 ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
+; slv_enable_4                                ; MLABCELL_X34_Y36_N45 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; slv_enable_4~1                              ; MLABCELL_X34_Y36_N9  ; 1       ; Latch enable ; no     ; --                   ; --               ; --                        ;
++---------------------------------------------+----------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +-------------------------------------------------------------------------------------------------+
@@ -2225,47 +2225,47 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +---------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Summary                                                                                             ;
-+-----------------------------------------------------------+-----------------------------------------------------------+-------------------+
-; Source Clock(s)                                           ; Destination Clock(s)                                      ; Delay Added in ns ;
-+-----------------------------------------------------------+-----------------------------------------------------------+-------------------+
-; e_my_finite_SM:finite_state_machine|slv_fsm_state.State_4 ; clk                                                       ; 27.9              ;
-; clk                                                       ; clk                                                       ; 6.3               ;
-; clk                                                       ; e_my_finite_SM:finite_state_machine|slv_fsm_state.State_4 ; 3.1               ;
-; clk,I/O                                                   ; e_my_finite_SM:finite_state_machine|slv_fsm_state.State_4 ; 2.2               ;
-+-----------------------------------------------------------+-----------------------------------------------------------+-------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary                                                                                       ;
++--------------------------------------------------------+--------------------------------------------------------+-------------------+
+; Source Clock(s)                                        ; Destination Clock(s)                                   ; Delay Added in ns ;
++--------------------------------------------------------+--------------------------------------------------------+-------------------+
+; e_finite_sm:finite_state_machine|slv_fsm_state.State_4 ; clk                                                    ; 27.9              ;
+; clk                                                    ; clk                                                    ; 6.3               ;
+; clk                                                    ; e_finite_sm:finite_state_machine|slv_fsm_state.State_4 ; 3.1               ;
+; clk,I/O                                                ; e_finite_sm:finite_state_machine|slv_fsm_state.State_4 ; 2.2               ;
++--------------------------------------------------------+--------------------------------------------------------+-------------------+
 Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
 This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Estimated Delay Added for Hold Timing Details                                                                                             ;
-+-----------------------------------------------------------+-----------------------------------------------------------+-------------------+
-; Source Register                                           ; Destination Register                                      ; Delay Added in ns ;
-+-----------------------------------------------------------+-----------------------------------------------------------+-------------------+
-; e_my_finite_SM:finite_state_machine|slv_fsm_state.State_4 ; e_my_finite_SM:finite_state_machine|slv_fsm_state.State_5 ; 5.422             ;
-; slv_enable_2                                              ; e_my_FlipFlop:flip_flop_2|buff[1]                         ; 4.290             ;
-; slv_enable_1                                              ; e_my_FlipFlop:flip_flop_1|buff[0]                         ; 3.546             ;
-; slv_enable_4                                              ; e_my_FlipFlop:flip_flop_4|buff[1]                         ; 3.480             ;
-; slv_enable_3                                              ; e_my_FlipFlop:flip_flop_3|buff[0]                         ; 2.905             ;
-; e_my_finite_SM:finite_state_machine|slv_fsm_state.State_5 ; slv_enable_1                                              ; 2.389             ;
-; e_my_finite_SM:finite_state_machine|slv_fsm_state.State_6 ; slv_enable_1                                              ; 2.389             ;
-; e_my_finite_SM:finite_state_machine|slv_fsm_state.state_1 ; slv_enable_1                                              ; 2.389             ;
-; e_my_finite_SM:finite_state_machine|slv_fsm_state.state_2 ; slv_enable_1                                              ; 2.389             ;
-; e_my_finite_SM:finite_state_machine|slv_fsm_state.state_3 ; slv_enable_1                                              ; 2.389             ;
-; SW[1]                                                     ; slv_enable_1                                              ; 1.195             ;
-; SW[8]                                                     ; slv_enable_1                                              ; 1.195             ;
-; SW[7]                                                     ; slv_enable_1                                              ; 1.195             ;
-; SW[9]                                                     ; slv_enable_1                                              ; 1.195             ;
-; SW[4]                                                     ; slv_enable_1                                              ; 1.195             ;
-; SW[5]                                                     ; slv_enable_1                                              ; 1.195             ;
-; SW[2]                                                     ; slv_enable_1                                              ; 1.195             ;
-; SW[0]                                                     ; slv_enable_1                                              ; 1.195             ;
-; SW[3]                                                     ; slv_enable_1                                              ; 1.195             ;
-; SW[6]                                                     ; slv_enable_1                                              ; 1.195             ;
-; e_my_finite_SM:finite_state_machine|slv_fsm_state.state_0 ; e_my_finite_SM:finite_state_machine|slv_fsm_state.state_1 ; 0.295             ;
-+-----------------------------------------------------------+-----------------------------------------------------------+-------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                                                       ;
++--------------------------------------------------------+--------------------------------------------------------+-------------------+
+; Source Register                                        ; Destination Register                                   ; Delay Added in ns ;
++--------------------------------------------------------+--------------------------------------------------------+-------------------+
+; e_finite_sm:finite_state_machine|slv_fsm_state.State_4 ; e_finite_sm:finite_state_machine|slv_fsm_state.State_5 ; 5.422             ;
+; slv_enable_2                                           ; e_flipflop:flip_flop_2|buff[1]                         ; 4.290             ;
+; slv_enable_1                                           ; e_flipflop:flip_flop_1|buff[0]                         ; 3.546             ;
+; slv_enable_4                                           ; e_flipflop:flip_flop_4|buff[1]                         ; 3.480             ;
+; slv_enable_3                                           ; e_flipflop:flip_flop_3|buff[0]                         ; 2.905             ;
+; e_finite_sm:finite_state_machine|slv_fsm_state.State_5 ; slv_enable_1                                           ; 2.389             ;
+; e_finite_sm:finite_state_machine|slv_fsm_state.State_6 ; slv_enable_1                                           ; 2.389             ;
+; e_finite_sm:finite_state_machine|slv_fsm_state.state_1 ; slv_enable_1                                           ; 2.389             ;
+; e_finite_sm:finite_state_machine|slv_fsm_state.state_2 ; slv_enable_1                                           ; 2.389             ;
+; e_finite_sm:finite_state_machine|slv_fsm_state.state_3 ; slv_enable_1                                           ; 2.389             ;
+; SW[1]                                                  ; slv_enable_1                                           ; 1.195             ;
+; SW[8]                                                  ; slv_enable_1                                           ; 1.195             ;
+; SW[7]                                                  ; slv_enable_1                                           ; 1.195             ;
+; SW[9]                                                  ; slv_enable_1                                           ; 1.195             ;
+; SW[4]                                                  ; slv_enable_1                                           ; 1.195             ;
+; SW[5]                                                  ; slv_enable_1                                           ; 1.195             ;
+; SW[2]                                                  ; slv_enable_1                                           ; 1.195             ;
+; SW[0]                                                  ; slv_enable_1                                           ; 1.195             ;
+; SW[3]                                                  ; slv_enable_1                                           ; 1.195             ;
+; SW[6]                                                  ; slv_enable_1                                           ; 1.195             ;
+; e_finite_sm:finite_state_machine|slv_fsm_state.state_0 ; e_finite_sm:finite_state_machine|slv_fsm_state.state_1 ; 0.295             ;
++--------------------------------------------------------+--------------------------------------------------------+-------------------+
 Note: This table only shows the top 21 path(s) that have the largest delay added for hold.
 
 
@@ -2309,24 +2309,24 @@ Info (170195): Router estimated average interconnect usage is 1% of the availabl
     Info (170196): Router estimated peak interconnect usage is 15% of the available device resources in the region that extends from location X22_Y35 to location X32_Y45
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:31
-Info (11888): Total time spent on timing analysis during the Fitter is 3.69 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:28
+Info (11888): Total time spent on timing analysis during the Fitter is 3.77 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:12
-Info (144001): Generated suppressed messages file C:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/output_files/e_my_calculator.fit.smsg
+Info (11801): Fitter post-fit operations ending: elapsed time is 00:00:10
+Info (144001): Generated suppressed messages file C:/Users/umang/Desktop/my new/output_files/e_my_calculator.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 6667 megabytes
-    Info: Processing ended: Sat Dec 25 11:44:19 2021
-    Info: Elapsed time: 00:01:35
-    Info: Total CPU time (on all processors): 00:03:17
+    Info: Peak virtual memory: 6676 megabytes
+    Info: Processing ended: Fri Feb 18 18:44:39 2022
+    Info: Elapsed time: 00:01:32
+    Info: Total CPU time (on all processors): 00:03:07
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/umang/Desktop/FPGA/Calculator (2) (1)/Calculator/output_files/e_my_calculator.fit.smsg.
+The suppressed messages can be found in C:/Users/umang/Desktop/my new/output_files/e_my_calculator.fit.smsg.
 
 

@@ -8,18 +8,16 @@ entity e_7_seg is
 				clk 								:in    std_logic;
 				number    			   :in    integer := 0;
 				sev_seg_out       :out   std_logic_vector(6 downto 0)
-
 				);
 end entity e_7_seg;
 
 architecture a_7_seg of e_7_seg is
 
----- Declaration Part -----------------------------------------------
+---- Declaration Part ----
 
 -- Signal Declarations
 
 	signal slv_0 : std_logic_vector(6 downto 0) :="0000001";
-	
 	signal slv_1 		: std_logic_vector(6 downto 0) :="1001111";
 	signal slv_2 		: std_logic_vector(6 downto 0) :="0010010";
 	signal slv_3 		: std_logic_vector(6 downto 0) :="0000110";
@@ -35,11 +33,9 @@ architecture a_7_seg of e_7_seg is
 --
 begin
 
----- Assignment Part ------------------------------------------------
+---- Assignment Part ----
 
 -- Concurrent Assignments:
-
- 
       
    Hex_assignment: process (clk,number) -- state table
    begin
@@ -66,7 +62,6 @@ begin
 			
          when others => sev_seg_out <= slv_x;
       end case;
-   end process Hex_assignment; -- state_table
-
+   end process Hex_assignment; -- state table
   
 end architecture a_7_seg;
