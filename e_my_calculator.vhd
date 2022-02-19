@@ -70,15 +70,15 @@ port
 	);
 end component;
 
-component e_get_digit_from_int is 
-   port (
-       	clk			 :in    std_logic;
-				input_number :in    integer ;
-				digit1       :out   integer;
-				digit2       :out   integer;
-				digit3       :out   integer
-		);
-end component;
+--component e_get_digit_from_int is 
+--   port (
+--       	clk			 :in    std_logic;
+--				input_number :in    integer ;
+--				digit1       :out   integer;
+--				digit2       :out   integer;
+--				digit3       :out   integer
+--		);
+--end component;
 
 component e_7_seg is 
    port (   
@@ -143,7 +143,7 @@ begin
 	HEX_6 : e_7_seg port map (clk,slv_r_digit_1,HEX5);
 	HEX_7 : e_7_seg port map (clk,slv_r_digit_2,HEX6);
 		
-	divide_digits: e_get_digit_from_int port map (slv_clk, slv_result, r_digit_0, r_digit_1, r_digit_2);
+--	divide_digits: e_get_digit_from_int port map (slv_clk, slv_result, r_digit_0, r_digit_1, r_digit_2);
 	operation:  e_arithmetic_operations port map( slv_clk,combined_int_1,combined_int_2,slv_start_operation,slv_push_btn_input,slv_result);	
 	main_process: process(clk,slv_current_state,slv_current_digit_from_switch)
 	

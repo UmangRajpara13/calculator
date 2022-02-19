@@ -86,35 +86,36 @@ always: process
 	
 		begin
 		wait for 50ns;
-		SW (0) <= '1';
-		
+
+		SW (0) <= '1';	
 		wait for 50ns;
+
 	 	SW (0) <= '0';
-	
 		wait for 100ns;
-		SW (1) <= '1';
-		
+
+		SW (1) <= '1';		
 		wait for 50ns;
+
 		SW (1) <= '0';
 		wait for 100ns;
-		
-		SW (2) <= '1';
-		
+
+		SW (5) <= '1';
 		wait for 50ns;
-		SW (2) <= '0';
+
+		SW (5) <= '0';
 		wait for 100ns;
-		
-		SW (1) <= '1';
-		
-		wait for 50ns;
-		SW (1) <= '0';
-		wait for 100ns;
-		
+
 		SW (0) <= '1';
-		
 		wait for 50ns;
+
 		SW (0) <= '0';
-		
+		wait for 100ns;
+
+		SW (5) <= '1';
+		wait for 50ns;
+
+		SW (0) <= '0';
+	
 		Key <= "1000";
 		wait for 150ns;
 		

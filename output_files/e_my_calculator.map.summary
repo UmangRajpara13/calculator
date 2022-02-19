@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Fri Feb 18 18:43:06 2022
+Analysis & Synthesis Status : Successful - Fri Feb 18 20:20:53 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : e_my_calculator
 Top-level Entity Name : e_my_calculator
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 87
+Total registers : 23
 Total pins : 90
 Total virtual pins : 0
 Total block memory bits : 0
-Total DSP Blocks : 2
+Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
 Total HSSI TX PCSs : 0
