@@ -1,11 +1,11 @@
-Fitter Status : Successful - Fri Feb 18 20:21:24 2022
+Fitter Status : Successful - Sat Feb 19 22:54:43 2022
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : e_my_calculator
 Top-level Entity Name : e_my_calculator
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Final
-Logic utilization (in ALMs) : 43 / 32,070 ( < 1 % )
+Logic utilization (in ALMs) : 41 / 32,070 ( < 1 % )
 Total registers : 23
 Total pins : 90 / 457 ( 20 % )
 Total virtual pins : 0

@@ -31,6 +31,7 @@ begin
    select_integer: process (switch_input) -- drive the red LEDs for each state
    begin
       case switch_input IS
+			when "0000000001" =>   slv_integer <= 0;
          when "0000000010" =>   slv_integer <= 1;
          when "0000000100" =>   slv_integer <= 2;
          when "0000001000" =>   slv_integer <= 3;
@@ -40,7 +41,6 @@ begin
 			when "0010000000" =>   slv_integer <= 7;
 			when "0100000000" =>   slv_integer <= 8;
 			when "1000000000" =>   slv_integer <= 9;
-			when "0000000001" =>   slv_integer <= 0;
 			when others       =>   slv_integer <= 10;
          end case;
    end process select_integer; -- leds

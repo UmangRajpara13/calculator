@@ -17,7 +17,7 @@
 -- suit user's needs .Comments are provided in each section to help the user  
 -- fill out necessary details.                                                
 -- ***************************************************************************
--- Generated on "07/30/2021 15:14:23"
+-- Generated on "07/01/2022 13:07:45"
                                                             
 -- Vhdl Test Bench template for design  :  e_my_calculator
 -- 
@@ -116,7 +116,7 @@ always: process
 
 		SW (0) <= '0';
 	
-		Key <= "1000";
+		Key <= "0001";
 		wait for 150ns;
 		
 		Key <= "0010";
@@ -125,7 +125,7 @@ always: process
 		Key <= "0100";
 		wait for 150ns;
 		
-		Key <= "0001";
+		Key <= "1000";
 		wait for 150ns;
 		
 		end procedure test;

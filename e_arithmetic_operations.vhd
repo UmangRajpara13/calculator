@@ -36,9 +36,9 @@ begin
 												
 					when "0010" =>	slv_out_unsigned <= slv_x - slv_y;
 				
-					when "0100" =>	slv_out_unsigned <= slv_x / slv_y;
+					when "0100" =>	slv_out_unsigned <= slv_x * slv_y;
 			
-					when "1000" =>	slv_out_unsigned <= slv_x * slv_y;
+					when "1000" =>	slv_out_unsigned <= slv_x / slv_y;
 			
 					when others =>	slv_out_unsigned <= 0;
 				end case;
