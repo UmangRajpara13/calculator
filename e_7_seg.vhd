@@ -1,8 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
--- A sequence detector FSM
--- SW0 is the active low synchronous reset, SW1 is the w input, and KEY0 is the clock.
--- The z output appears on LEDR0, and the state is indicated on LEDR8..0
+
 entity e_7_seg is 
    port (   
 				clk 								:in    std_logic;
@@ -13,11 +11,10 @@ end entity e_7_seg;
 
 architecture a_7_seg of e_7_seg is
 
----- Declaration Part ----
+--- signal declarations ---
+--- remeber 7-segs are low active ---
 
--- Signal Declarations
-
-	signal slv_0 : std_logic_vector(6 downto 0) :="0000001";
+	signal slv_0      : std_logic_vector(6 downto 0) :="0000001";
 	signal slv_1 		: std_logic_vector(6 downto 0) :="1001111";
 	signal slv_2 		: std_logic_vector(6 downto 0) :="0010010";
 	signal slv_3 		: std_logic_vector(6 downto 0) :="0000110";
@@ -29,15 +26,11 @@ architecture a_7_seg of e_7_seg is
 	signal slv_9 	   : std_logic_vector(6 downto 0) :="0000100";  
 	signal slv_X 	   : std_logic_vector(6 downto 0) :="1111111";  
 	
-	
---
 begin
 
----- Assignment Part ----
-
--- Concurrent Assignments:
+--- assignments ---
       
-   Hex_assignment: process (clk,number) -- state table
+   hex_assignment: process (clk,number)
    begin
       case number is
 			when 0 => sev_seg_out <= slv_0;
@@ -62,6 +55,6 @@ begin
 			
          when others => sev_seg_out <= slv_x;
       end case;
-   end process Hex_assignment; -- state table
+   end process hex_assignment;
   
 end architecture a_7_seg;

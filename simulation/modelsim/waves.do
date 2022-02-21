@@ -16,16 +16,6 @@ add wave -noupdate /e_my_calculator_vhd_tst/i1/combined_int_1
 add wave -noupdate /e_my_calculator_vhd_tst/i1/combined_int_2
 
 add wave -noupdate /e_my_calculator_vhd_tst/i1/slv_result
-add wave -noupdate /e_my_calculator_vhd_tst/i1/slv_r_digit_0
-add wave -noupdate /e_my_calculator_vhd_tst/i1/slv_r_digit_1
-add wave -noupdate /e_my_calculator_vhd_tst/i1/slv_r_digit_2
-add wave -noupdate /e_my_calculator_vhd_tst/i1/slv_operand_2
-add wave -noupdate /e_my_calculator_vhd_tst/i1/slv_operand_1
-add wave -noupdate /e_my_calculator_vhd_tst/i1/slv_result_store
-
-add wave -noupdate /e_my_calculator_vhd_tst/i1/r_digit_0
-add wave -noupdate /e_my_calculator_vhd_tst/i1/r_digit_1
-add wave -noupdate /e_my_calculator_vhd_tst/i1/r_digit_2
 
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {0 ps} 0}

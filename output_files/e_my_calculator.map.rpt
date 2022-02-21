@@ -1,5 +1,5 @@
 Analysis & Synthesis report for e_my_calculator
-Sat Feb 19 22:54:12 2022
+Mon Feb 21 14:25:02 2022
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -13,12 +13,12 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |e_my_calculator|e_finite_sm:finite_state_machine|slv_fsm_state
+  8. State Machine - |e_my_calculator|e_finite_sm:fsm|slv_fsm_state
   9. User-Specified and Inferred Latches
  10. Registers Removed During Synthesis
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Port Connectivity Checks: "e_arithmetic_operations:operation"
+ 13. Port Connectivity Checks: "e_arithmetic_operations:operations"
  14. Port Connectivity Checks: "e_flipflop:flip_flop_10"
  15. Port Connectivity Checks: "e_flipflop:flip_flop_9"
  16. Port Connectivity Checks: "e_flipflop:flip_flop_8"
@@ -29,7 +29,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
  21. Port Connectivity Checks: "e_flipflop:flip_flop_3"
  22. Port Connectivity Checks: "e_flipflop:flip_flop_2"
  23. Port Connectivity Checks: "e_flipflop:flip_flop_1"
- 24. Port Connectivity Checks: "e_finite_sm:finite_state_machine"
+ 24. Port Connectivity Checks: "e_finite_sm:fsm"
  25. Post-Synthesis Netlist Statistics for Top Partition
  26. Elapsed Time Per Partition
  27. Analysis & Synthesis Messages
@@ -58,7 +58,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Feb 19 22:54:12 2022       ;
+; Analysis & Synthesis Status     ; Successful - Mon Feb 21 14:25:02 2022       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; e_my_calculator                             ;
 ; Top-level Entity Name           ; e_my_calculator                             ;
@@ -182,19 +182,19 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                               ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                  ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------+---------+
-; e_my_calculator.vhd              ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_my_calculator.vhd         ;         ;
-; e_finite_sm.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_finite_sm.vhd             ;         ;
-; e_convert_sw_to_integer.vhd      ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_convert_sw_to_integer.vhd ;         ;
-; e_combine_int.vhd                ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_combine_int.vhd           ;         ;
-; e_flipflop.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_flipflop.vhd              ;         ;
-; e_7_seg.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_7_seg.vhd                 ;         ;
-; e_arithmetic_operations.vhd      ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------+---------+
+; e_combine_digits.vhd             ; yes             ; User VHDL File        ; C:/Users/umang/Desktop/New folder/e_combine_digits.vhd            ;         ;
+; e_convert_switch_to_integer.vhd  ; yes             ; User VHDL File        ; C:/Users/umang/Desktop/New folder/e_convert_switch_to_integer.vhd ;         ;
+; e_my_calculator.vhd              ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_my_calculator.vhd             ;         ;
+; e_finite_sm.vhd                  ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_finite_sm.vhd                 ;         ;
+; e_flipflop.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_flipflop.vhd                  ;         ;
+; e_7_seg.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_7_seg.vhd                     ;         ;
+; e_arithmetic_operations.vhd      ; yes             ; Auto-Found VHDL File  ; C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd     ;         ;
++----------------------------------+-----------------+-----------------------+-------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -224,29 +224,29 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                   ;
-+--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+-------------------------+--------------+
-; Compilation Hierarchy Node                 ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                    ; Entity Name             ; Library Name ;
-+--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+-------------------------+--------------+
-; |e_my_calculator                           ; 69 (16)             ; 23 (0)                    ; 0                 ; 0          ; 90   ; 0            ; |e_my_calculator                                       ; e_my_calculator         ; work         ;
-;    |e_7_seg:HEX_1|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_7_seg:HEX_1                         ; e_7_seg                 ; work         ;
-;    |e_7_seg:HEX_2|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_7_seg:HEX_2                         ; e_7_seg                 ; work         ;
-;    |e_7_seg:HEX_3|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_7_seg:HEX_3                         ; e_7_seg                 ; work         ;
-;    |e_7_seg:HEX_4|                         ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_7_seg:HEX_4                         ; e_7_seg                 ; work         ;
-;    |e_convert_sw_to_integer:convert_digit| ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_convert_sw_to_integer:convert_digit ; e_convert_sw_to_integer ; work         ;
-;    |e_finite_sm:finite_state_machine|      ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_finite_sm:finite_state_machine      ; e_finite_sm             ; work         ;
-;    |e_flipflop:flip_flop_1|                ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_1                ; e_flipflop              ; work         ;
-;    |e_flipflop:flip_flop_2|                ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_2                ; e_flipflop              ; work         ;
-;    |e_flipflop:flip_flop_3|                ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_3                ; e_flipflop              ; work         ;
-;    |e_flipflop:flip_flop_4|                ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_4                ; e_flipflop              ; work         ;
-+--------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------+-------------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                   ;
++--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------------------+--------------+
+; Compilation Hierarchy Node                       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                          ; Entity Name                 ; Library Name ;
++--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------------------+--------------+
+; |e_my_calculator                                 ; 69 (16)             ; 23 (0)                    ; 0                 ; 0          ; 90   ; 0            ; |e_my_calculator                                             ; e_my_calculator             ; work         ;
+;    |e_7_seg:HEX_1|                               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_7_seg:HEX_1                               ; e_7_seg                     ; work         ;
+;    |e_7_seg:HEX_2|                               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_7_seg:HEX_2                               ; e_7_seg                     ; work         ;
+;    |e_7_seg:HEX_3|                               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_7_seg:HEX_3                               ; e_7_seg                     ; work         ;
+;    |e_7_seg:HEX_4|                               ; 7 (7)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_7_seg:HEX_4                               ; e_7_seg                     ; work         ;
+;    |e_convert_switch_to_integer:switch_to_digit| ; 18 (18)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_convert_switch_to_integer:switch_to_digit ; e_convert_switch_to_integer ; work         ;
+;    |e_finite_sm:fsm|                             ; 7 (7)               ; 7 (7)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_finite_sm:fsm                             ; e_finite_sm                 ; work         ;
+;    |e_flipflop:flip_flop_1|                      ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_1                      ; e_flipflop                  ; work         ;
+;    |e_flipflop:flip_flop_2|                      ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_2                      ; e_flipflop                  ; work         ;
+;    |e_flipflop:flip_flop_3|                      ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_3                      ; e_flipflop                  ; work         ;
+;    |e_flipflop:flip_flop_4|                      ; 0 (0)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |e_my_calculator|e_flipflop:flip_flop_4                      ; e_flipflop                  ; work         ;
++--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------+-----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |e_my_calculator|e_finite_sm:finite_state_machine|slv_fsm_state                                                                                                               ;
+; State Machine - |e_my_calculator|e_finite_sm:fsm|slv_fsm_state                                                                                                                                ;
 +-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+
 ; Name                  ; slv_fsm_state.State_6 ; slv_fsm_state.State_5 ; slv_fsm_state.State_4 ; slv_fsm_state.state_3 ; slv_fsm_state.state_2 ; slv_fsm_state.state_1 ; slv_fsm_state.state_0 ;
 +-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+-----------------------+
@@ -311,22 +311,22 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |e_my_calculator|e_finite_sm:finite_state_machine|Selector0 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |e_my_calculator|e_finite_sm:fsm|Selector0 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
 
 
-+---------------------------------------------------------------+
-; Port Connectivity Checks: "e_arithmetic_operations:operation" ;
-+---------------------+-------+----------+----------------------+
-; Port                ; Type  ; Severity ; Details              ;
-+---------------------+-------+----------+----------------------+
-; slv_start_operation ; Input ; Info     ; Stuck at VCC         ;
-+---------------------+-------+----------+----------------------+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "e_arithmetic_operations:operations" ;
++---------------------+-------+----------+-----------------------+
+; Port                ; Type  ; Severity ; Details               ;
++---------------------+-------+----------+-----------------------+
+; slv_start_operation ; Input ; Info     ; Stuck at VCC          ;
++---------------------+-------+----------+-----------------------+
 
 
 +-----------------------------------------------------+
@@ -437,13 +437,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +------+-------+----------+--------------------------+
 
 
-+--------------------------------------------------------------+
-; Port Connectivity Checks: "e_finite_sm:finite_state_machine" ;
-+-------+-------+----------+-----------------------------------+
-; Port  ; Type  ; Severity ; Details                           ;
-+-------+-------+----------+-----------------------------------+
-; reset ; Input ; Info     ; Stuck at GND                      ;
-+-------+-------+----------+-----------------------------------+
++---------------------------------------------+
+; Port Connectivity Checks: "e_finite_sm:fsm" ;
++-------+-------+----------+------------------+
+; Port  ; Type  ; Severity ; Details          ;
++-------+-------+----------+------------------+
+; reset ; Input ; Info     ; Stuck at GND     ;
++-------+-------+----------+------------------+
 
 
 +-----------------------------------------------------+
@@ -485,10 +485,16 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Feb 19 22:54:04 2022
+    Info: Processing started: Mon Feb 21 14:24:54 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off e_my_calculator -c e_my_calculator
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file e_combine_digits.vhd
+    Info (12022): Found design unit 1: e_combine_digits-a_combine_int File: C:/Users/umang/Desktop/New folder/e_combine_digits.vhd Line: 18
+    Info (12023): Found entity 1: e_combine_digits File: C:/Users/umang/Desktop/New folder/e_combine_digits.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file e_convert_switch_to_integer.vhd
+    Info (12022): Found design unit 1: e_convert_switch_to_integer-a_convert_switch_to_integer File: C:/Users/umang/Desktop/New folder/e_convert_switch_to_integer.vhd Line: 11
+    Info (12023): Found entity 1: e_convert_switch_to_integer File: C:/Users/umang/Desktop/New folder/e_convert_switch_to_integer.vhd Line: 5
 Warning (12125): Using design file e_my_calculator.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: e_my_calculator-a_my_Calculator File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 25
     Info (12023): Found entity 1: e_my_calculator File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 5
@@ -504,10 +510,10 @@ Warning (10541): VHDL Signal Declaration warning at e_my_calculator.vhd(100): us
 Warning (10036): Verilog HDL or VHDL warning at e_my_calculator.vhd(102): object "slv_result_store" assigned a value but never read File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 102
 Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(139): signal "slv_switch_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 139
 Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(141): signal "slv_digit_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 141
-Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(147): signal "slv_switch_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 147
-Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(155): signal "slv_switch_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 155
-Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(163): signal "slv_switch_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 163
-Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(171): signal "slv_push_btn_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 171
+Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(146): signal "slv_switch_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 146
+Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(153): signal "slv_switch_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 153
+Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(161): signal "slv_switch_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 161
+Warning (10492): VHDL Process Statement warning at e_my_calculator.vhd(169): signal "slv_push_btn_input" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 169
 Warning (10631): VHDL Process Statement warning at e_my_calculator.vhd(135): inferring latch(es) for signal or variable "slv_enable_1", which holds its previous value in one or more paths through the process File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 135
 Warning (10631): VHDL Process Statement warning at e_my_calculator.vhd(135): inferring latch(es) for signal or variable "slv_enable_2", which holds its previous value in one or more paths through the process File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 135
 Warning (10631): VHDL Process Statement warning at e_my_calculator.vhd(135): inferring latch(es) for signal or variable "slv_enable_3", which holds its previous value in one or more paths through the process File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 135
@@ -531,102 +537,96 @@ Info (10041): Inferred latch for "slv_enable_3" at e_my_calculator.vhd(135) File
 Info (10041): Inferred latch for "slv_enable_2" at e_my_calculator.vhd(135) File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 135
 Info (10041): Inferred latch for "slv_enable_1" at e_my_calculator.vhd(135) File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 135
 Warning (12125): Using design file e_finite_sm.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: e_finite_sm-a_finite_sm File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 14
-    Info (12023): Found entity 1: e_finite_sm File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 5
-Info (12128): Elaborating entity "e_finite_sm" for hierarchy "e_finite_sm:finite_state_machine" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 109
-Warning (12125): Using design file e_convert_sw_to_integer.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: e_convert_sw_to_integer-a_convert_sw_to_integer File: C:/Users/umang/Desktop/New folder/e_convert_sw_to_integer.vhd Line: 11
-    Info (12023): Found entity 1: e_convert_sw_to_integer File: C:/Users/umang/Desktop/New folder/e_convert_sw_to_integer.vhd Line: 5
-Info (12128): Elaborating entity "e_convert_sw_to_integer" for hierarchy "e_convert_sw_to_integer:convert_digit" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 110
-Warning (12125): Using design file e_combine_int.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: e_combine_int-a_combine_int File: C:/Users/umang/Desktop/New folder/e_combine_int.vhd Line: 18
-    Info (12023): Found entity 1: e_combine_int File: C:/Users/umang/Desktop/New folder/e_combine_int.vhd Line: 7
-Info (12128): Elaborating entity "e_combine_int" for hierarchy "e_combine_int:combine_digits_1" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 112
+    Info (12022): Found design unit 1: e_finite_sm-a_finite_sm File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 13
+    Info (12023): Found entity 1: e_finite_sm File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 4
+Info (12128): Elaborating entity "e_finite_sm" for hierarchy "e_finite_sm:fsm" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 109
+Info (12128): Elaborating entity "e_convert_switch_to_integer" for hierarchy "e_convert_switch_to_integer:switch_to_digit" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 110
+Info (12128): Elaborating entity "e_combine_digits" for hierarchy "e_combine_digits:operand_1" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 112
 Warning (12125): Using design file e_flipflop.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: e_flipflop-a_flipflop File: C:/Users/umang/Desktop/New folder/e_flipflop.vhd Line: 14
     Info (12023): Found entity 1: e_flipflop File: C:/Users/umang/Desktop/New folder/e_flipflop.vhd Line: 6
 Info (12128): Elaborating entity "e_flipflop" for hierarchy "e_flipflop:flip_flop_1" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 115
 Warning (12125): Using design file e_7_seg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: e_7_seg-a_7_seg File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 14
-    Info (12023): Found entity 1: e_7_seg File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 6
+    Info (12022): Found design unit 1: e_7_seg-a_7_seg File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 12
+    Info (12023): Found entity 1: e_7_seg File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 4
 Info (12128): Elaborating entity "e_7_seg" for hierarchy "e_7_seg:HEX_1" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 126
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(20): used explicit default value for signal "slv_0" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 20
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(21): used explicit default value for signal "slv_1" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 21
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(22): used explicit default value for signal "slv_2" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 22
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(23): used explicit default value for signal "slv_3" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 23
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(24): used explicit default value for signal "slv_4" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 24
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(25): used explicit default value for signal "slv_5" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 25
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(26): used explicit default value for signal "slv_6" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 26
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(27): used explicit default value for signal "slv_7" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 27
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(28): used explicit default value for signal "slv_8" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 28
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(29): used explicit default value for signal "slv_9" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 29
-Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(30): used explicit default value for signal "slv_X" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 30
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(43): signal "slv_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 43
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(45): signal "slv_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 45
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(47): signal "slv_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(49): signal "slv_3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(51): signal "slv_4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 51
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(53): signal "slv_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 53
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(55): signal "slv_6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 55
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(57): signal "slv_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 57
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(59): signal "slv_8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(61): signal "slv_9" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 61
-Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(63): signal "slv_X" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 63
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(17): used explicit default value for signal "slv_0" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 17
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(18): used explicit default value for signal "slv_1" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 18
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(19): used explicit default value for signal "slv_2" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 19
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(20): used explicit default value for signal "slv_3" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 20
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(21): used explicit default value for signal "slv_4" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 21
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(22): used explicit default value for signal "slv_5" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 22
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(23): used explicit default value for signal "slv_6" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 23
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(24): used explicit default value for signal "slv_7" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 24
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(25): used explicit default value for signal "slv_8" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 25
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(26): used explicit default value for signal "slv_9" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 26
+Warning (10540): VHDL Signal Declaration warning at e_7_seg.vhd(27): used explicit default value for signal "slv_X" because signal was never assigned a value File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(36): signal "slv_0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(38): signal "slv_1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(40): signal "slv_2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(42): signal "slv_3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(44): signal "slv_4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 44
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(46): signal "slv_5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(48): signal "slv_6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(50): signal "slv_7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(52): signal "slv_8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 52
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(54): signal "slv_9" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 54
+Warning (10492): VHDL Process Statement warning at e_7_seg.vhd(56): signal "slv_X" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_7_seg.vhd Line: 56
 Warning (12125): Using design file e_arithmetic_operations.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: e_arithmetic_operations-a_arithmetic_operations File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 21
     Info (12023): Found entity 1: e_arithmetic_operations File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 7
-Info (12128): Elaborating entity "e_arithmetic_operations" for hierarchy "e_arithmetic_operations:operation" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 134
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(32): signal "slv_start_operation" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 32
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(33): signal "slv_push_btn" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 33
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(35): signal "slv_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 35
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(35): signal "slv_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 35
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(37): signal "slv_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 37
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(37): signal "slv_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 37
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(39): signal "slv_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 39
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(39): signal "slv_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 39
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(41): signal "slv_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 41
-Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(41): signal "slv_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 41
-Warning (10631): VHDL Process Statement warning at e_arithmetic_operations.vhd(28): inferring latch(es) for signal or variable "slv_out_unsigned", which holds its previous value in one or more paths through the process File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[0]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[1]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[2]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[3]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[4]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[5]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[6]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[7]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[8]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[9]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[10]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[11]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[12]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[13]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[14]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[15]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[16]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[17]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[18]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[19]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[20]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[21]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[22]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[23]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[24]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[25]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[26]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[27]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[28]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[29]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[30]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
-Info (10041): Inferred latch for "slv_out_unsigned[31]" at e_arithmetic_operations.vhd(28) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 28
+Info (12128): Elaborating entity "e_arithmetic_operations" for hierarchy "e_arithmetic_operations:operations" File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 134
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(29): signal "slv_start_operation" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(30): signal "slv_push_btn" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(32): signal "slv_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(32): signal "slv_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(34): signal "slv_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(34): signal "slv_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(36): signal "slv_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(36): signal "slv_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(38): signal "slv_x" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at e_arithmetic_operations.vhd(38): signal "slv_y" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 38
+Warning (10631): VHDL Process Statement warning at e_arithmetic_operations.vhd(25): inferring latch(es) for signal or variable "slv_out_unsigned", which holds its previous value in one or more paths through the process File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[0]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[1]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[2]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[3]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[4]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[5]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[6]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[7]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[8]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[9]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[10]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[11]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[12]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[13]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[14]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[15]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[16]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[17]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[18]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[19]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[20]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[21]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[22]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[23]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[24]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[25]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[26]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[27]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[28]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[29]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[30]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
+Info (10041): Inferred latch for "slv_out_unsigned[31]" at e_arithmetic_operations.vhd(25) File: C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd Line: 25
 Warning (13012): Latch slv_enable_1 has unsafe behavior File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 92
     Warning (13013): Ports D and ENA on the latch are fed by the same signal SW[0] File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 10
 Warning (13012): Latch slv_enable_2 has unsafe behavior File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 92
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal e_finite_sm:finite_state_machine|WideOr0 File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal e_finite_sm:fsm|WideOr0 File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 61
 Warning (13012): Latch slv_enable_3 has unsafe behavior File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 92
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal e_finite_sm:finite_state_machine|WideOr0 File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal e_finite_sm:fsm|WideOr0 File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 61
 Warning (13012): Latch slv_enable_4 has unsafe behavior File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 92
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal e_finite_sm:finite_state_machine|WideOr0 File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 76
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal e_finite_sm:fsm|WideOr0 File: C:/Users/umang/Desktop/New folder/e_finite_sm.vhd Line: 61
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "LEDR[0]" is stuck at GND File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 9
     Warning (13410): Pin "LEDR[1]" is stuck at GND File: C:/Users/umang/Desktop/New folder/e_my_calculator.vhd Line: 9
@@ -682,10 +682,10 @@ Info (21057): Implemented 178 device resources after synthesis - the final resou
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 75 output pins
     Info (21061): Implemented 88 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 123 warnings
-    Info: Peak virtual memory: 4856 megabytes
-    Info: Processing ended: Sat Feb 19 22:54:13 2022
-    Info: Elapsed time: 00:00:09
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 121 warnings
+    Info: Peak virtual memory: 4863 megabytes
+    Info: Processing ended: Mon Feb 21 14:25:02 2022
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:18
 
 

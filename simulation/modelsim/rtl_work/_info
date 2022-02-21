@@ -9,21 +9,21 @@ z2
 cModel Technology
 Z0 dC:/Users/umang/Desktop/New folder/simulation/modelsim
 Ee_7_seg
-Z1 w1643935505
+Z1 w1645446316
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
 Z4 8C:/Users/umang/Desktop/New folder/e_7_seg.vhd
 Z5 FC:/Users/umang/Desktop/New folder/e_7_seg.vhd
 l0
-L6
-VCh8X8lYXCc57nBC_VK87f2
-!s100 DZ?=VYDJRAS1]3kH<3mJT3
+L4
+VTefRLCR<mzcUWC470e?[b3
+!s100 ;_7Q6gc>:if`cVU:CMn]_3
 Z6 OV;C;10.5b;63
 31
-Z7 !s110 1645306463
+Z7 !s110 1645451872
 !i10b 1
-Z8 !s108 1645306463.000000
+Z8 !s108 1645451872.000000
 Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/umang/Desktop/New folder/e_7_seg.vhd|
 Z10 !s107 C:/Users/umang/Desktop/New folder/e_7_seg.vhd|
 !i113 1
@@ -32,11 +32,11 @@ Z12 tExplicit 1 CvgOpt 0
 Aa_7_seg
 R2
 R3
-DEx4 work 7 e_7_seg 0 22 Ch8X8lYXCc57nBC_VK87f2
-l34
-L14
-ViB<GE<CSKD;U]DP`DA58<1
-!s100 ;<SV<G[]e^>RCdAmL6VfC1
+DEx4 work 7 e_7_seg 0 22 TefRLCR<mzcUWC470e?[b3
+l29
+L12
+V`8Ca?cK8:PKiCEAnR6eJc2
+!s100 _7cCW@U5Zla@4Y<z_]RSo0
 R6
 31
 R7
@@ -48,242 +48,281 @@ R10
 R11
 R12
 Ee_arithmetic_operations
-Z13 w1645306210
+Z13 w1645447147
 Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R2
 R3
 R0
-Z15 8C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd
-Z16 FC:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd
+Z15 8../../e_arithmetic_operations.vhd
+Z16 F../../e_arithmetic_operations.vhd
 l0
 L7
-V_aY0LjW`TFiU77_DV5PQ_3
+VXL2e>dXEOBPe<9<;BmndL2
 !s100 EKMZPJ6HMQ6J81;7n=VAC2
 R6
-31
-R7
+32
+Z17 !s110 1645451876
 !i10b 1
-R8
-Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd|
-Z18 !s107 C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd|
+Z18 !s108 1645451876.000000
+Z19 !s90 -reportprogress|300|-work|work|../../e_arithmetic_operations.vhd|
+Z20 !s107 ../../e_arithmetic_operations.vhd|
 !i113 1
-R11
+Z21 o-work work
 R12
 Aa_arithmetic_operations
 R14
 R2
 R3
-DEx4 work 23 e_arithmetic_operations 0 22 _aY0LjW`TFiU77_DV5PQ_3
-l26
+DEx4 work 23 e_arithmetic_operations 0 22 XL2e>dXEOBPe<9<;BmndL2
+l23
 L21
-Vg;eO9Fni=BQ7XlFTXf5g;0
-!s100 aWL2<@Czj4C9AJ5c46O3@0
+VaaACLBN4kjkTEA5^iI_c73
+!s100 ]F425WDHk?I7MTV?N^5Yc0
 R6
-31
-R7
-!i10b 1
-R8
+32
 R17
+!i10b 1
 R18
+R19
+R20
 !i113 1
-R11
+R21
 R12
-Ee_combine_int
-R1
+Ee_combine_digits
+Z22 w1645447145
 R14
 R2
 R3
 R0
-Z19 8C:/Users/umang/Desktop/New folder/e_combine_int.vhd
-Z20 FC:/Users/umang/Desktop/New folder/e_combine_int.vhd
+Z23 8../../e_combine_digits.vhd
+Z24 F../../e_combine_digits.vhd
 l0
 L7
-V:WBa42EA`V@ZTGXTFHXBN1
-!s100 56dJk4mP<oS;C[TMY`3U01
+V_UNVZ2IecEfG7a_ngOG>71
+!s100 k^RJ`[o>gLXd]5df6kM4R1
 R6
-31
-R7
+32
+R17
 !i10b 1
-R8
-Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/umang/Desktop/New folder/e_combine_int.vhd|
-Z22 !s107 C:/Users/umang/Desktop/New folder/e_combine_int.vhd|
+R18
+Z25 !s90 -reportprogress|300|-work|work|../../e_combine_digits.vhd|
+Z26 !s107 ../../e_combine_digits.vhd|
 !i113 1
-R11
+R21
 R12
 Aa_combine_int
 R14
 R2
 R3
-DEx4 work 13 e_combine_int 0 22 :WBa42EA`V@ZTGXTFHXBN1
+DEx4 work 16 e_combine_digits 0 22 _UNVZ2IecEfG7a_ngOG>71
 l23
 L18
-V?o0^12G1B[<>fk1MzT4G>0
-!s100 EWg0bA5WiV6iZmY>GS=?R0
+V8:;n>e]U:dB<3]aL___6z3
+!s100 U5F:D9b3K6kCMjDW8zS^A0
 R6
-31
-R7
+32
+R17
 !i10b 1
-R8
-R21
-R22
-!i113 1
-R11
-R12
-Ee_convert_sw_to_integer
-R1
-R2
-R3
-R0
-Z23 8C:/Users/umang/Desktop/New folder/e_convert_sw_to_integer.vhd
-Z24 FC:/Users/umang/Desktop/New folder/e_convert_sw_to_integer.vhd
-l0
-L5
-V;PzV50:`iTK9bXU_oVhj_0
-!s100 9enYC4?MQ7mc6oT[OnkRI0
-R6
-31
-R7
-!i10b 1
-R8
-Z25 !s90 -reportprogress|300|-93|-work|work|C:/Users/umang/Desktop/New folder/e_convert_sw_to_integer.vhd|
-Z26 !s107 C:/Users/umang/Desktop/New folder/e_convert_sw_to_integer.vhd|
-!i113 1
-R11
-R12
-Aa_convert_sw_to_integer
-R2
-R3
-DEx4 work 23 e_convert_sw_to_integer 0 22 ;PzV50:`iTK9bXU_oVhj_0
-l23
-L11
-VhWfVJC84RhR7jokalUiiL1
-!s100 zOVPV7>Ac`d7C8;fn2Cn<0
-R6
-31
-R7
-!i10b 1
-R8
+R18
 R25
 R26
 !i113 1
-R11
+R21
 R12
-Ee_finite_sm
-R1
+Ee_convert_switch_to_integer
+Z27 w1645448582
 R2
 R3
 R0
-Z27 8C:/Users/umang/Desktop/New folder/e_finite_sm.vhd
-Z28 FC:/Users/umang/Desktop/New folder/e_finite_sm.vhd
+Z28 8../../e_convert_switch_to_integer.vhd
+Z29 F../../e_convert_switch_to_integer.vhd
 l0
 L5
-VCQ`jAPe<jnkn==P1?LBl^3
-!s100 4T42L6X739Q4dAiR9S6FP0
+V5=;HR7;;E@`?Td3>==ALf1
+!s100 >i=LJm1SU>Ua2]]=ahOUN2
 R6
-31
-R7
+32
+R17
 !i10b 1
-R8
-Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/umang/Desktop/New folder/e_finite_sm.vhd|
-Z30 !s107 C:/Users/umang/Desktop/New folder/e_finite_sm.vhd|
+R18
+Z30 !s90 -reportprogress|300|-work|work|../../e_convert_switch_to_integer.vhd|
+Z31 !s107 ../../e_convert_switch_to_integer.vhd|
 !i113 1
-R11
+R21
+R12
+Aa_convert_switch_to_integer
+R2
+R3
+DEx4 work 27 e_convert_switch_to_integer 0 22 5=;HR7;;E@`?Td3>==ALf1
+l13
+L11
+V__6=80TGF7Zf5;lnJJec`1
+!s100 ^f`z3d;khH_lc;kY>MkjY1
+R6
+32
+R17
+!i10b 1
+R18
+R30
+R31
+!i113 1
+R21
+R12
+Ee_finite_sm
+Z32 w1645447146
+R2
+R3
+R0
+Z33 8../../e_finite_sm.vhd
+Z34 F../../e_finite_sm.vhd
+l0
+L4
+V2]7ZW2GA[B<4j_RV1=]bH0
+!s100 f9`aRFKD[PW6Umo<3fibh2
+R6
+32
+R17
+!i10b 1
+R18
+Z35 !s90 -reportprogress|300|-work|work|../../e_finite_sm.vhd|
+Z36 !s107 ../../e_finite_sm.vhd|
+!i113 1
+R21
 R12
 Aa_finite_sm
 R2
 R3
-DEx4 work 11 e_finite_sm 0 22 CQ`jAPe<jnkn==P1?LBl^3
-l32
-L14
-VMnJBQ=mf53STa=G4hWF]h2
-!s100 3iB=jA@=TYfa1DLZ9CSzg1
+DEx4 work 11 e_finite_sm 0 22 2]7ZW2GA[B<4j_RV1=]bH0
+l23
+L13
+VJZAdmN>_@Ze>;bYAGieSf1
+!s100 n0aQc^7g:P@[:4lnGXF3e2
 R6
-31
-R7
+32
+R17
 !i10b 1
-R8
-R29
-R30
+R18
+R35
+R36
 !i113 1
-R11
+R21
 R12
 Ee_flipflop
-R1
+Z37 w1643935505
 R2
 R3
 R0
-Z31 8C:/Users/umang/Desktop/New folder/e_flipflop.vhd
-Z32 FC:/Users/umang/Desktop/New folder/e_flipflop.vhd
+Z38 8../../e_flipflop.vhd
+Z39 F../../e_flipflop.vhd
 l0
 L6
-VP3<=0b:`e<HGTQ[WeG2kX1
+V2?hY<;8O3LV?m>QYDEkAH0
 !s100 K<hInc:JjAHS9`Q6c`aLE0
 R6
-31
-R7
+32
+R17
 !i10b 1
-R8
-Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/umang/Desktop/New folder/e_flipflop.vhd|
-Z34 !s107 C:/Users/umang/Desktop/New folder/e_flipflop.vhd|
+R18
+Z40 !s90 -reportprogress|300|-work|work|../../e_flipflop.vhd|
+Z41 !s107 ../../e_flipflop.vhd|
 !i113 1
-R11
+R21
 R12
 Aa_flipflop
 R2
 R3
-DEx4 work 10 e_flipflop 0 22 P3<=0b:`e<HGTQ[WeG2kX1
+DEx4 work 10 e_flipflop 0 22 2?hY<;8O3LV?m>QYDEkAH0
 l15
 L14
-V:;Sb^=onYgh5YC;4U??RU3
+V?UdGRL83T5iN;H<]18dF>0
 !s100 63hOiBhXf4o7GND6Ve2;j2
 R6
-31
-R7
+32
+R17
 !i10b 1
-R8
-R33
-R34
+R18
+R40
+R41
 !i113 1
-R11
+R21
 R12
 Ee_my_calculator
-Z35 w1645306274
+Z42 w1645448638
 R14
 R2
 R3
 R0
-Z36 8C:/Users/umang/Desktop/New folder/e_my_calculator.vhd
-Z37 FC:/Users/umang/Desktop/New folder/e_my_calculator.vhd
+Z43 8../../e_my_calculator.vhd
+Z44 F../../e_my_calculator.vhd
 l0
 L5
-V3dTl4:SI;D?IY_JDZo?BT0
-!s100 Sz?Tokhi;D3zh^f=lcddV2
+V;zEi4nZ=9:i500izRYhO<3
+!s100 ZhR31_5Bh<0TFQV]fGECK0
 R6
-31
-R7
+32
+R17
 !i10b 1
-R8
-Z38 !s90 -reportprogress|300|-93|-work|work|C:/Users/umang/Desktop/New folder/e_my_calculator.vhd|
-Z39 !s107 C:/Users/umang/Desktop/New folder/e_my_calculator.vhd|
+R18
+Z45 !s90 -reportprogress|300|-work|work|../../e_my_calculator.vhd|
+Z46 !s107 ../../e_my_calculator.vhd|
 !i113 1
-R11
+R21
 R12
 Aa_my_calculator
 R14
 R2
 R3
-DEx4 work 15 e_my_calculator 0 22 3dTl4:SI;D?IY_JDZo?BT0
+DEx4 work 15 e_my_calculator 0 22 ;zEi4nZ=9:i500izRYhO<3
 l104
 L25
-Vhc:4PDWR58^VZHlnh9`Yb2
-!s100 18e@8zi`:]ZCHkBk_kbiL1
+VdkWD4ozlfo2goRPVG`Uf<2
+!s100 :G[WIE_]fI?nz``HP?8ho3
 R6
-31
-R7
+32
+R17
 !i10b 1
-R8
-R38
-R39
+R18
+R45
+R46
 !i113 1
-R11
+R21
+R12
+Ee_my_calculator_vhd_tst
+Z47 w1645450503
+R2
+R3
+R0
+Z48 8e_my_calculator_vhd_tst.vht
+Z49 Fe_my_calculator_vhd_tst.vht
+l0
+L30
+VR8loZ]bgW8I>d?PQd_@dg2
+!s100 L0YJ3DYW7lY_if4;I2dn^1
+R6
+32
+R17
+!i10b 1
+R18
+Z50 !s90 -reportprogress|300|-work|work|e_my_calculator_vhd_tst.vht|
+Z51 !s107 e_my_calculator_vhd_tst.vht|
+!i113 1
+R21
+R12
+Ae_my_calculator_arch
+R2
+R3
+DEx4 work 23 e_my_calculator_vhd_tst 0 22 R8loZ]bgW8I>d?PQd_@dg2
+l59
+L32
+V44TlSWE2Kb4_O54H]iZa_0
+!s100 e?R?HTU<g91Jj`V8Mf`HK2
+R6
+32
+R17
+!i10b 1
+R18
+R50
+R51
+!i113 1
+R21
 R12

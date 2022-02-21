@@ -19,13 +19,10 @@ end entity e_arithmetic_operations;
 
 
 architecture a_arithmetic_operations of e_arithmetic_operations is
-	signal slv_out_temp: integer;
-	signal slv_add_temp: integer;
 	
-
 begin
 
-	calculations: process (CLK)
+	calculate: process (CLK)
 	
 	begin 
 	

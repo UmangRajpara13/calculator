@@ -1,6 +1,6 @@
 |e_my_calculator
 clk => e_7_seg:HEX_1.clk
-clk => e_finite_sm:finite_state_machine.clk
+clk => e_finite_sm:fsm.clk
 clk => e_flipflop:flip_flop_1.Clk
 clk => e_flipflop:flip_flop_2.Clk
 clk => e_flipflop:flip_flop_3.Clk
@@ -17,7 +17,7 @@ clk => e_7_seg:HEX_4.clk
 clk => e_7_seg:HEX_5.clk
 clk => e_7_seg:HEX_6.clk
 clk => e_7_seg:HEX_7.clk
-clk => e_arithmetic_operations:operation.CLK
+clk => e_arithmetic_operations:operations.CLK
 LEDR[0] << LEDR[0].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[1] << LEDR[1].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[2] << LEDR[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -28,44 +28,44 @@ LEDR[6] << LEDR[6].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[7] << LEDR[7].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[8] << LEDR[8].DB_MAX_OUTPUT_PORT_TYPE
 LEDR[9] << LEDR[9].DB_MAX_OUTPUT_PORT_TYPE
-SW[0] => e_finite_sm:finite_state_machine.switch_input[0]
-SW[0] => e_convert_sw_to_integer:convert_digit.switch_input[0]
+SW[0] => e_finite_sm:fsm.switch_input[0]
+SW[0] => e_convert_switch_to_integer:switch_to_digit.switch_input[0]
 SW[0] => Equal5.IN9
-SW[1] => e_finite_sm:finite_state_machine.switch_input[1]
-SW[1] => e_convert_sw_to_integer:convert_digit.switch_input[1]
+SW[1] => e_finite_sm:fsm.switch_input[1]
+SW[1] => e_convert_switch_to_integer:switch_to_digit.switch_input[1]
 SW[1] => Equal5.IN8
-SW[2] => e_finite_sm:finite_state_machine.switch_input[2]
-SW[2] => e_convert_sw_to_integer:convert_digit.switch_input[2]
+SW[2] => e_finite_sm:fsm.switch_input[2]
+SW[2] => e_convert_switch_to_integer:switch_to_digit.switch_input[2]
 SW[2] => Equal5.IN7
-SW[3] => e_finite_sm:finite_state_machine.switch_input[3]
-SW[3] => e_convert_sw_to_integer:convert_digit.switch_input[3]
+SW[3] => e_finite_sm:fsm.switch_input[3]
+SW[3] => e_convert_switch_to_integer:switch_to_digit.switch_input[3]
 SW[3] => Equal5.IN6
-SW[4] => e_finite_sm:finite_state_machine.switch_input[4]
-SW[4] => e_convert_sw_to_integer:convert_digit.switch_input[4]
+SW[4] => e_finite_sm:fsm.switch_input[4]
+SW[4] => e_convert_switch_to_integer:switch_to_digit.switch_input[4]
 SW[4] => Equal5.IN5
-SW[5] => e_finite_sm:finite_state_machine.switch_input[5]
-SW[5] => e_convert_sw_to_integer:convert_digit.switch_input[5]
+SW[5] => e_finite_sm:fsm.switch_input[5]
+SW[5] => e_convert_switch_to_integer:switch_to_digit.switch_input[5]
 SW[5] => Equal5.IN4
-SW[6] => e_finite_sm:finite_state_machine.switch_input[6]
-SW[6] => e_convert_sw_to_integer:convert_digit.switch_input[6]
+SW[6] => e_finite_sm:fsm.switch_input[6]
+SW[6] => e_convert_switch_to_integer:switch_to_digit.switch_input[6]
 SW[6] => Equal5.IN3
-SW[7] => e_finite_sm:finite_state_machine.switch_input[7]
-SW[7] => e_convert_sw_to_integer:convert_digit.switch_input[7]
+SW[7] => e_finite_sm:fsm.switch_input[7]
+SW[7] => e_convert_switch_to_integer:switch_to_digit.switch_input[7]
 SW[7] => Equal5.IN2
-SW[8] => e_finite_sm:finite_state_machine.switch_input[8]
-SW[8] => e_convert_sw_to_integer:convert_digit.switch_input[8]
+SW[8] => e_finite_sm:fsm.switch_input[8]
+SW[8] => e_convert_switch_to_integer:switch_to_digit.switch_input[8]
 SW[8] => Equal5.IN1
-SW[9] => e_finite_sm:finite_state_machine.switch_input[9]
-SW[9] => e_convert_sw_to_integer:convert_digit.switch_input[9]
+SW[9] => e_finite_sm:fsm.switch_input[9]
+SW[9] => e_convert_switch_to_integer:switch_to_digit.switch_input[9]
 SW[9] => Equal5.IN0
-KEY[0] => e_finite_sm:finite_state_machine.push_btn_input[0]
-KEY[0] => e_arithmetic_operations:operation.slv_push_btn[0]
-KEY[1] => e_finite_sm:finite_state_machine.push_btn_input[1]
-KEY[1] => e_arithmetic_operations:operation.slv_push_btn[1]
-KEY[2] => e_finite_sm:finite_state_machine.push_btn_input[2]
-KEY[2] => e_arithmetic_operations:operation.slv_push_btn[2]
-KEY[3] => e_finite_sm:finite_state_machine.push_btn_input[3]
-KEY[3] => e_arithmetic_operations:operation.slv_push_btn[3]
+KEY[0] => e_finite_sm:fsm.push_btn_input[0]
+KEY[0] => e_arithmetic_operations:operations.slv_push_btn[0]
+KEY[1] => e_finite_sm:fsm.push_btn_input[1]
+KEY[1] => e_arithmetic_operations:operations.slv_push_btn[1]
+KEY[2] => e_finite_sm:fsm.push_btn_input[2]
+KEY[2] => e_arithmetic_operations:operations.slv_push_btn[2]
+KEY[3] => e_finite_sm:fsm.push_btn_input[3]
+KEY[3] => e_arithmetic_operations:operations.slv_push_btn[3]
 HEX0[0] << e_7_seg:HEX_1.sev_seg_out[0]
 HEX0[1] << e_7_seg:HEX_1.sev_seg_out[1]
 HEX0[2] << e_7_seg:HEX_1.sev_seg_out[2]
@@ -133,7 +133,7 @@ slv_out_unsigned[14] << slv_out_unsigned[14].DB_MAX_OUTPUT_PORT_TYPE
 slv_out_unsigned[15] << slv_out_unsigned[15].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_finite_sm:finite_state_machine
+|e_my_calculator|e_finite_sm:fsm
 clk => slv_fsm_state~8.DATAIN
 reset => slv_fsm_state.OUTPUTSELECT
 reset => slv_fsm_state.OUTPUTSELECT
@@ -142,8 +142,8 @@ reset => slv_fsm_state.OUTPUTSELECT
 reset => slv_fsm_state.OUTPUTSELECT
 reset => slv_fsm_state.OUTPUTSELECT
 reset => slv_fsm_state.OUTPUTSELECT
-reset => finite_state_Machine_transition.IN1
-reset => finite_state_Machine_transition.IN1
+reset => fsm_transitions.IN1
+reset => fsm_transitions.IN1
 switch_input[0] => Equal0.IN9
 switch_input[1] => Equal0.IN8
 switch_input[2] => Equal0.IN7
@@ -164,7 +164,7 @@ output_state[2] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 output_state[3] <= <GND>
 
 
-|e_my_calculator|e_convert_sw_to_integer:convert_digit
+|e_my_calculator|e_convert_switch_to_integer:switch_to_digit
 switch_input[0] => Equal0.IN19
 switch_input[0] => Equal1.IN19
 switch_input[0] => Equal2.IN19
@@ -299,7 +299,7 @@ out_integer[30] <= <GND>
 out_integer[31] <= <GND>
 
 
-|e_my_calculator|e_combine_int:combine_digits_1
+|e_my_calculator|e_combine_digits:operand_1
 slv_x[0] => Add1.IN64
 slv_x[0] => Add0.IN62
 slv_x[1] => Add1.IN63
@@ -430,7 +430,7 @@ slv_out_unsigned[30] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 slv_out_unsigned[31] <= Add1.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_combine_int:combine_digits_2
+|e_my_calculator|e_combine_digits:operand_2
 slv_x[0] => Add1.IN64
 slv_x[0] => Add0.IN62
 slv_x[1] => Add1.IN63
@@ -4508,7 +4508,7 @@ sev_seg_out[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 sev_seg_out[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|e_my_calculator|e_arithmetic_operations:operation
+|e_my_calculator|e_arithmetic_operations:operations
 CLK => ~NO_FANOUT~
 slv_x[0] => Add0.IN32
 slv_x[0] => Add1.IN64

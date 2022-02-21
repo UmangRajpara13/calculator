@@ -2,7 +2,7 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Slow 1100mV 85C Model Setup 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : -7.289
 TNS   : -21.817
 
@@ -14,7 +14,7 @@ Type  : Slow 1100mV 85C Model Hold 'clk'
 Slack : 0.088
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Hold 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Slow 1100mV 85C Model Hold 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : 1.247
 TNS   : 0.000
 
@@ -22,11 +22,11 @@ Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -0.394
 TNS   : -12.238
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : -0.224
 TNS   : -0.674
 
-Type  : Slow 1100mV 0C Model Setup 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Slow 1100mV 0C Model Setup 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : -7.243
 TNS   : -21.840
 
@@ -38,7 +38,7 @@ Type  : Slow 1100mV 0C Model Hold 'clk'
 Slack : -0.187
 TNS   : -0.187
 
-Type  : Slow 1100mV 0C Model Hold 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Slow 1100mV 0C Model Hold 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : 1.190
 TNS   : 0.000
 
@@ -46,11 +46,11 @@ Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -0.394
 TNS   : -13.066
 
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : -0.319
 TNS   : -1.230
 
-Type  : Fast 1100mV 85C Model Setup 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Fast 1100mV 85C Model Setup 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : -3.986
 TNS   : -10.989
 
@@ -62,7 +62,7 @@ Type  : Fast 1100mV 85C Model Hold 'clk'
 Slack : 0.187
 TNS   : 0.000
 
-Type  : Fast 1100mV 85C Model Hold 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Fast 1100mV 85C Model Hold 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : 0.908
 TNS   : 0.000
 
@@ -70,11 +70,11 @@ Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
 Slack : -0.083
 TNS   : -1.878
 
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : 0.127
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Setup 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Fast 1100mV 0C Model Setup 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : -3.696
 TNS   : -10.248
 
@@ -86,7 +86,7 @@ Type  : Fast 1100mV 0C Model Hold 'clk'
 Slack : 0.161
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Hold 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Fast 1100mV 0C Model Hold 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : 0.755
 TNS   : 0.000
 
@@ -94,7 +94,7 @@ Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
 Slack : -0.081
 TNS   : -1.817
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'e_finite_sm:finite_state_machine|slv_fsm_state.State_4'
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'e_finite_sm:fsm|slv_fsm_state.State_4'
 Slack : 0.132
 TNS   : 0.000
 

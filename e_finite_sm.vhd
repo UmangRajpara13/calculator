@@ -1,7 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-
 entity e_finite_sm is 
    port (   clk             :in    std_logic;
             reset   			 : in   std_logic;
@@ -13,12 +12,7 @@ end entity e_finite_sm;
 
 architecture a_finite_sm of e_finite_sm is
 
----- Declaration Part -----------------------------------------------
-
--- Signal Declarations
-   
-
--- Type Declarations
+--- type and signal declarations ---
    type t_fsm_states is (state_0,state_1,state_2,state_3,State_4,State_5,State_6);
    signal slv_fsm_state : t_fsm_states;
    signal slv_switch_0 : std_logic_vector (3 downto 0);
@@ -26,18 +20,11 @@ architecture a_finite_sm of e_finite_sm is
 	signal slv_switch_2 : std_logic_vector (3 downto 0);
 	signal slv_switch_3 : std_logic_vector (3 downto 0);
 
----- Synthesis Attribute Declarations
-	signal pattern_0,pattern_1,pattern_2,pattern_3 : std_logic_vector(3 downto 0);
-
 begin
 
----- Assignment Part ----
-
--- Concurrent Assignments:
-
- 
+--- assignments ---
       
-   finite_state_Machine_transition: process (clk,switch_input,push_btn_input) -- state table
+   fsm_transitions: process (clk,switch_input,push_btn_input)
    begin
 		if (rising_edge (clk)) then 
       case slv_fsm_state is
@@ -64,14 +51,12 @@ begin
 								end if;
 			          
          when others   => slv_fsm_state <= State_0;
-      
 		end case;
-		
 		end if;
    
-	end process finite_state_Machine_transition; --- state table
+	end process fsm_transitions;
 
-   set_state_out: process (slv_fsm_state) -- drive the red LEDs for each state
+   set_state: process (slv_fsm_state)
    begin
       case slv_fsm_state IS
          when State_0 =>   output_state(3 downto 0) <= "0000";
@@ -83,6 +68,6 @@ begin
 			when State_6 =>   output_state(3 downto 0) <= "0110";
 			
          end case;
-   end process set_state_out; -- leds
-
+   end process set_state; 
+	
 end architecture a_finite_sm;

@@ -17,7 +17,7 @@
 -- suit user's needs .Comments are provided in each section to help the user  
 -- fill out necessary details.                                                
 -- ***************************************************************************
--- Generated on "07/01/2022 13:07:45"
+-- Generated on "21/02/2022 14:34:00"
                                                             
 -- Vhdl Test Bench template for design  :  e_my_calculator
 -- 

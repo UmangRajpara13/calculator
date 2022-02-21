@@ -10,9 +10,32 @@
 # Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
+# vcom -93 -work work {C:/Users/umang/Desktop/New folder/e_combine_digits.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:51 on Feb 21,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/umang/Desktop/New folder/e_combine_digits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity e_combine_digits
+# -- Compiling architecture a_combine_int of e_combine_digits
+# End time: 14:57:51 on Feb 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/umang/Desktop/New folder/e_convert_switch_to_integer.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:51 on Feb 21,2022
+# vcom -reportprogress 300 -93 -work work C:/Users/umang/Desktop/New folder/e_convert_switch_to_integer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity e_convert_switch_to_integer
+# -- Compiling architecture a_convert_switch_to_integer of e_convert_switch_to_integer
+# End time: 14:57:51 on Feb 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/umang/Desktop/New folder/e_my_calculator.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:34:23 on Feb 19,2022
+# Start time: 14:57:51 on Feb 21,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/umang/Desktop/New folder/e_my_calculator.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -20,67 +43,44 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity e_my_calculator
 # -- Compiling architecture a_my_Calculator of e_my_calculator
-# End time: 22:34:23 on Feb 19,2022, Elapsed time: 0:00:00
+# End time: 14:57:51 on Feb 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/umang/Desktop/New folder/e_finite_sm.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:34:23 on Feb 19,2022
+# Start time: 14:57:51 on Feb 21,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/umang/Desktop/New folder/e_finite_sm.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity e_finite_sm
 # -- Compiling architecture a_finite_sm of e_finite_sm
-# End time: 22:34:23 on Feb 19,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/umang/Desktop/New folder/e_convert_sw_to_integer.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:34:23 on Feb 19,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/umang/Desktop/New folder/e_convert_sw_to_integer.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity e_convert_sw_to_integer
-# -- Compiling architecture a_convert_sw_to_integer of e_convert_sw_to_integer
-# End time: 22:34:23 on Feb 19,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/umang/Desktop/New folder/e_combine_int.vhd}
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:34:23 on Feb 19,2022
-# vcom -reportprogress 300 -93 -work work C:/Users/umang/Desktop/New folder/e_combine_int.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity e_combine_int
-# -- Compiling architecture a_combine_int of e_combine_int
-# End time: 22:34:23 on Feb 19,2022, Elapsed time: 0:00:00
+# End time: 14:57:51 on Feb 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/umang/Desktop/New folder/e_flipflop.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:34:23 on Feb 19,2022
+# Start time: 14:57:52 on Feb 21,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/umang/Desktop/New folder/e_flipflop.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity e_flipflop
 # -- Compiling architecture a_flipflop of e_flipflop
-# End time: 22:34:23 on Feb 19,2022, Elapsed time: 0:00:00
+# End time: 14:57:52 on Feb 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/umang/Desktop/New folder/e_7_seg.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:34:23 on Feb 19,2022
+# Start time: 14:57:52 on Feb 21,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/umang/Desktop/New folder/e_7_seg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity e_7_seg
 # -- Compiling architecture a_7_seg of e_7_seg
-# End time: 22:34:23 on Feb 19,2022, Elapsed time: 0:00:00
+# End time: 14:57:52 on Feb 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vcom -93 -work work {C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd}
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 22:34:23 on Feb 19,2022
+# Start time: 14:57:52 on Feb 21,2022
 # vcom -reportprogress 300 -93 -work work C:/Users/umang/Desktop/New folder/e_arithmetic_operations.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -88,6 +88,117 @@
 # -- Loading package NUMERIC_STD
 # -- Compiling entity e_arithmetic_operations
 # -- Compiling architecture a_arithmetic_operations of e_arithmetic_operations
-# End time: 22:34:23 on Feb 19,2022, Elapsed time: 0:00:00
+# End time: 14:57:52 on Feb 21,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
+do run.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:56 on Feb 21,2022
+# vcom -reportprogress 300 -work work ../../e_my_calculator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity e_my_calculator
+# -- Compiling architecture a_my_Calculator of e_my_calculator
+# End time: 14:57:56 on Feb 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:56 on Feb 21,2022
+# vcom -reportprogress 300 -work work ../../e_finite_sm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity e_finite_sm
+# -- Compiling architecture a_finite_sm of e_finite_sm
+# End time: 14:57:56 on Feb 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:56 on Feb 21,2022
+# vcom -reportprogress 300 -work work ../../e_flipflop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity e_flipflop
+# -- Compiling architecture a_flipflop of e_flipflop
+# End time: 14:57:56 on Feb 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:56 on Feb 21,2022
+# vcom -reportprogress 300 -work work ../../e_convert_switch_to_integer.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity e_convert_switch_to_integer
+# -- Compiling architecture a_convert_switch_to_integer of e_convert_switch_to_integer
+# End time: 14:57:56 on Feb 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:56 on Feb 21,2022
+# vcom -reportprogress 300 -work work ../../e_combine_digits.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity e_combine_digits
+# -- Compiling architecture a_combine_int of e_combine_digits
+# End time: 14:57:56 on Feb 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:56 on Feb 21,2022
+# vcom -reportprogress 300 -work work ../../e_arithmetic_operations.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity e_arithmetic_operations
+# -- Compiling architecture a_arithmetic_operations of e_arithmetic_operations
+# End time: 14:57:56 on Feb 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:57:56 on Feb 21,2022
+# vcom -reportprogress 300 -work work e_my_calculator_vhd_tst.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity e_my_calculator_vhd_tst
+# -- Compiling architecture e_my_calculator_arch of e_my_calculator_vhd_tst
+# ** Warning: e_my_calculator_vhd_tst.vht(60): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(91): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(97): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(100): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(103): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(106): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(109): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(115): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(120): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(123): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(126): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: e_my_calculator_vhd_tst.vht(129): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 14:57:56 on Feb 21,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 15
+# vsim work.e_my_calculator_vhd_tst 
+# Start time: 14:57:56 on Feb 21,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.e_my_calculator_vhd_tst(e_my_calculator_arch)
+# Loading ieee.numeric_std(body)
+# Loading work.e_my_calculator(a_my_calculator)
+# Loading work.e_finite_sm(a_finite_sm)
+# Loading work.e_convert_switch_to_integer(a_convert_switch_to_integer)
+# Loading work.e_combine_digits(a_combine_int)
+# Loading work.e_flipflop(a_flipflop)
+# Loading work.e_7_seg(a_7_seg)
+# Loading work.e_arithmetic_operations(a_arithmetic_operations)
+# ** Warning: (vsim-8683) Uninitialized out port /e_my_calculator_vhd_tst/i1/LEDR(9 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUU) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /e_my_calculator_vhd_tst/i1/slv_out_unsigned(15 downto 0) has no driver.
+# This port will contribute value (UUUUUUUUUUUUUUUU) to the signal network.
+# Break key hit
+# Simulation stop requested.
+# End time: 14:58:17 on Feb 21,2022, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 2

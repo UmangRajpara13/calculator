@@ -16,7 +16,7 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
-// DATE "02/19/2022 22:54:56"
+// DATE "02/21/2022 14:25:53"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -166,53 +166,53 @@ wire \SW[9]~input_o ;
 wire \SW[8]~input_o ;
 wire \SW[1]~input_o ;
 wire \SW[7]~input_o ;
-wire \convert_digit|Equal2~0_combout ;
+wire \switch_to_digit|Equal2~0_combout ;
 wire \SW[6]~input_o ;
 wire \SW[0]~input_o ;
-wire \convert_digit|Equal3~0_combout ;
+wire \switch_to_digit|Equal3~0_combout ;
 wire \SW[4]~input_o ;
 wire \SW[5]~input_o ;
 wire \SW[3]~input_o ;
-wire \convert_digit|Equal2~2_combout ;
-wire \convert_digit|WideNor0~4_combout ;
-wire \convert_digit|Equal1~0_combout ;
-wire \convert_digit|Equal7~0_combout ;
-wire \convert_digit|WideOr2~0_combout ;
-wire \convert_digit|WideNor0~0_combout ;
-wire \convert_digit|WideNor0~1_combout ;
-wire \convert_digit|Equal2~1_combout ;
-wire \convert_digit|WideNor0~2_combout ;
-wire \convert_digit|Equal8~0_combout ;
-wire \convert_digit|WideNor0~3_combout ;
-wire \convert_digit|WideOr2~combout ;
+wire \switch_to_digit|Equal2~2_combout ;
+wire \switch_to_digit|WideNor0~4_combout ;
+wire \switch_to_digit|Equal1~0_combout ;
+wire \switch_to_digit|Equal7~0_combout ;
+wire \switch_to_digit|WideOr2~0_combout ;
+wire \switch_to_digit|WideNor0~0_combout ;
+wire \switch_to_digit|WideNor0~1_combout ;
+wire \switch_to_digit|Equal2~1_combout ;
+wire \switch_to_digit|WideNor0~2_combout ;
+wire \switch_to_digit|Equal8~0_combout ;
+wire \switch_to_digit|WideNor0~3_combout ;
+wire \switch_to_digit|WideOr2~combout ;
 wire \KEY[2]~input_o ;
 wire \KEY[3]~input_o ;
 wire \KEY[1]~input_o ;
 wire \KEY[0]~input_o ;
-wire \finite_state_machine|Selector5~0_combout ;
-wire \finite_state_machine|Equal0~0_combout ;
-wire \finite_state_machine|slv_fsm_state.state_2~q ;
-wire \finite_state_machine|slv_fsm_state.state_3~q ;
-wire \finite_state_machine|slv_fsm_state.State_4~q ;
-wire \finite_state_machine|Selector5~1_combout ;
-wire \finite_state_machine|slv_fsm_state.State_5~q ;
-wire \finite_state_machine|slv_fsm_state.State_6~0_combout ;
-wire \finite_state_machine|slv_fsm_state.State_6~q ;
-wire \finite_state_machine|slv_fsm_state.state_0~0_combout ;
-wire \finite_state_machine|slv_fsm_state.state_0~q ;
-wire \finite_state_machine|slv_fsm_state.state_1~0_combout ;
-wire \finite_state_machine|slv_fsm_state.state_1~q ;
+wire \fsm|Selector5~0_combout ;
+wire \fsm|Equal0~0_combout ;
+wire \fsm|slv_fsm_state.state_2~q ;
+wire \fsm|slv_fsm_state.state_3~q ;
+wire \fsm|slv_fsm_state.State_4~q ;
+wire \fsm|Selector5~1_combout ;
+wire \fsm|slv_fsm_state.State_5~q ;
+wire \fsm|slv_fsm_state.State_6~0_combout ;
+wire \fsm|slv_fsm_state.State_6~q ;
+wire \fsm|slv_fsm_state.state_0~0_combout ;
+wire \fsm|slv_fsm_state.state_0~q ;
+wire \fsm|slv_fsm_state.state_1~0_combout ;
+wire \fsm|slv_fsm_state.state_1~q ;
 wire \Equal0~0_combout ;
 wire \slv_enable_1~0_combout ;
 wire \slv_enable_2~0_combout ;
-wire \finite_state_machine|WideOr2~combout ;
+wire \fsm|WideOr2~combout ;
 wire \slv_enable_1~2_combout ;
-wire \convert_digit|Equal6~0_combout ;
-wire \convert_digit|WideOr1~combout ;
-wire \convert_digit|WideOr0~0_combout ;
+wire \switch_to_digit|Equal6~0_combout ;
+wire \switch_to_digit|WideOr1~combout ;
+wire \switch_to_digit|WideOr0~0_combout ;
 wire \slv_enable_1~1_combout ;
 wire \Equal2~1_combout ;
-wire \convert_digit|WideOr0~combout ;
+wire \switch_to_digit|WideOr0~combout ;
 wire \Equal2~0_combout ;
 wire \slv_enable_1~3_combout ;
 wire \slv_enable_1~combout ;
@@ -1538,9 +1538,9 @@ defparam \SW[7]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LABCELL_X83_Y4_N48
-cyclonev_lcell_comb \convert_digit|Equal2~0 (
+cyclonev_lcell_comb \switch_to_digit|Equal2~0 (
 // Equation(s):
-// \convert_digit|Equal2~0_combout  = ( !\SW[7]~input_o  & ( (!\SW[9]~input_o  & (!\SW[8]~input_o  & !\SW[1]~input_o )) ) )
+// \switch_to_digit|Equal2~0_combout  = ( !\SW[7]~input_o  & ( (!\SW[9]~input_o  & (!\SW[8]~input_o  & !\SW[1]~input_o )) ) )
 
 	.dataa(!\SW[9]~input_o ),
 	.datab(!\SW[8]~input_o ),
@@ -1551,14 +1551,14 @@ cyclonev_lcell_comb \convert_digit|Equal2~0 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|Equal2~0_combout ),
+	.combout(\switch_to_digit|Equal2~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|Equal2~0 .extended_lut = "off";
-defparam \convert_digit|Equal2~0 .lut_mask = 64'h8080808000000000;
-defparam \convert_digit|Equal2~0 .shared_arith = "off";
+defparam \switch_to_digit|Equal2~0 .extended_lut = "off";
+defparam \switch_to_digit|Equal2~0 .lut_mask = 64'h8080808000000000;
+defparam \switch_to_digit|Equal2~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: IOIBUF_X82_Y0_N41
@@ -1584,12 +1584,12 @@ defparam \SW[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N18
-cyclonev_lcell_comb \convert_digit|Equal3~0 (
+cyclonev_lcell_comb \switch_to_digit|Equal3~0 (
 // Equation(s):
-// \convert_digit|Equal3~0_combout  = ( !\SW[0]~input_o  & ( (!\SW[2]~input_o  & (\convert_digit|Equal2~0_combout  & !\SW[6]~input_o )) ) )
+// \switch_to_digit|Equal3~0_combout  = ( !\SW[0]~input_o  & ( (!\SW[2]~input_o  & (\switch_to_digit|Equal2~0_combout  & !\SW[6]~input_o )) ) )
 
 	.dataa(!\SW[2]~input_o ),
-	.datab(!\convert_digit|Equal2~0_combout ),
+	.datab(!\switch_to_digit|Equal2~0_combout ),
 	.datac(gnd),
 	.datad(!\SW[6]~input_o ),
 	.datae(gnd),
@@ -1597,14 +1597,14 @@ cyclonev_lcell_comb \convert_digit|Equal3~0 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|Equal3~0_combout ),
+	.combout(\switch_to_digit|Equal3~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|Equal3~0 .extended_lut = "off";
-defparam \convert_digit|Equal3~0 .lut_mask = 64'h2200220000000000;
-defparam \convert_digit|Equal3~0 .shared_arith = "off";
+defparam \switch_to_digit|Equal3~0 .extended_lut = "off";
+defparam \switch_to_digit|Equal3~0 .lut_mask = 64'h2200220000000000;
+defparam \switch_to_digit|Equal3~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: IOIBUF_X82_Y0_N58
@@ -1641,9 +1641,9 @@ defparam \SW[3]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N9
-cyclonev_lcell_comb \convert_digit|Equal2~2 (
+cyclonev_lcell_comb \switch_to_digit|Equal2~2 (
 // Equation(s):
-// \convert_digit|Equal2~2_combout  = ( !\SW[5]~input_o  & ( (!\SW[4]~input_o  & (!\SW[0]~input_o  & !\SW[3]~input_o )) ) )
+// \switch_to_digit|Equal2~2_combout  = ( !\SW[5]~input_o  & ( (!\SW[4]~input_o  & (!\SW[0]~input_o  & !\SW[3]~input_o )) ) )
 
 	.dataa(gnd),
 	.datab(!\SW[4]~input_o ),
@@ -1654,45 +1654,45 @@ cyclonev_lcell_comb \convert_digit|Equal2~2 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|Equal2~2_combout ),
+	.combout(\switch_to_digit|Equal2~2_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|Equal2~2 .extended_lut = "off";
-defparam \convert_digit|Equal2~2 .lut_mask = 64'hC000C00000000000;
-defparam \convert_digit|Equal2~2 .shared_arith = "off";
+defparam \switch_to_digit|Equal2~2 .extended_lut = "off";
+defparam \switch_to_digit|Equal2~2 .lut_mask = 64'hC000C00000000000;
+defparam \switch_to_digit|Equal2~2 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X83_Y4_N9
-cyclonev_lcell_comb \convert_digit|WideNor0~4 (
+cyclonev_lcell_comb \switch_to_digit|WideNor0~4 (
 // Equation(s):
-// \convert_digit|WideNor0~4_combout  = ( \SW[6]~input_o  & ( (\convert_digit|Equal2~0_combout  & (\convert_digit|Equal2~2_combout  & !\SW[2]~input_o )) ) ) # ( !\SW[6]~input_o  & ( (\convert_digit|Equal2~0_combout  & (\convert_digit|Equal2~2_combout  & 
-// \SW[2]~input_o )) ) )
+// \switch_to_digit|WideNor0~4_combout  = ( \SW[6]~input_o  & ( (\switch_to_digit|Equal2~0_combout  & (\switch_to_digit|Equal2~2_combout  & !\SW[2]~input_o )) ) ) # ( !\SW[6]~input_o  & ( (\switch_to_digit|Equal2~0_combout  & 
+// (\switch_to_digit|Equal2~2_combout  & \SW[2]~input_o )) ) )
 
-	.dataa(!\convert_digit|Equal2~0_combout ),
+	.dataa(!\switch_to_digit|Equal2~0_combout ),
 	.datab(gnd),
-	.datac(!\convert_digit|Equal2~2_combout ),
+	.datac(!\switch_to_digit|Equal2~2_combout ),
 	.datad(!\SW[2]~input_o ),
 	.datae(gnd),
 	.dataf(!\SW[6]~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideNor0~4_combout ),
+	.combout(\switch_to_digit|WideNor0~4_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideNor0~4 .extended_lut = "off";
-defparam \convert_digit|WideNor0~4 .lut_mask = 64'h0005000505000500;
-defparam \convert_digit|WideNor0~4 .shared_arith = "off";
+defparam \switch_to_digit|WideNor0~4 .extended_lut = "off";
+defparam \switch_to_digit|WideNor0~4 .lut_mask = 64'h0005000505000500;
+defparam \switch_to_digit|WideNor0~4 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N48
-cyclonev_lcell_comb \convert_digit|Equal1~0 (
+cyclonev_lcell_comb \switch_to_digit|Equal1~0 (
 // Equation(s):
-// \convert_digit|Equal1~0_combout  = ( !\SW[4]~input_o  & ( !\SW[0]~input_o  & ( (!\SW[2]~input_o  & (!\SW[3]~input_o  & (!\SW[5]~input_o  & !\SW[6]~input_o ))) ) ) )
+// \switch_to_digit|Equal1~0_combout  = ( !\SW[4]~input_o  & ( !\SW[0]~input_o  & ( (!\SW[2]~input_o  & (!\SW[3]~input_o  & (!\SW[5]~input_o  & !\SW[6]~input_o ))) ) ) )
 
 	.dataa(!\SW[2]~input_o ),
 	.datab(!\SW[3]~input_o ),
@@ -1703,119 +1703,119 @@ cyclonev_lcell_comb \convert_digit|Equal1~0 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|Equal1~0_combout ),
+	.combout(\switch_to_digit|Equal1~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|Equal1~0 .extended_lut = "off";
-defparam \convert_digit|Equal1~0 .lut_mask = 64'h8000000000000000;
-defparam \convert_digit|Equal1~0 .shared_arith = "off";
+defparam \switch_to_digit|Equal1~0 .extended_lut = "off";
+defparam \switch_to_digit|Equal1~0 .lut_mask = 64'h8000000000000000;
+defparam \switch_to_digit|Equal1~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X83_Y4_N51
-cyclonev_lcell_comb \convert_digit|Equal7~0 (
+cyclonev_lcell_comb \switch_to_digit|Equal7~0 (
 // Equation(s):
-// \convert_digit|Equal7~0_combout  = ( \SW[7]~input_o  & ( (!\SW[9]~input_o  & (!\SW[8]~input_o  & (\convert_digit|Equal1~0_combout  & !\SW[1]~input_o ))) ) )
+// \switch_to_digit|Equal7~0_combout  = ( \SW[7]~input_o  & ( (!\SW[9]~input_o  & (!\SW[8]~input_o  & (\switch_to_digit|Equal1~0_combout  & !\SW[1]~input_o ))) ) )
 
 	.dataa(!\SW[9]~input_o ),
 	.datab(!\SW[8]~input_o ),
-	.datac(!\convert_digit|Equal1~0_combout ),
+	.datac(!\switch_to_digit|Equal1~0_combout ),
 	.datad(!\SW[1]~input_o ),
 	.datae(gnd),
 	.dataf(!\SW[7]~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|Equal7~0_combout ),
+	.combout(\switch_to_digit|Equal7~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|Equal7~0 .extended_lut = "off";
-defparam \convert_digit|Equal7~0 .lut_mask = 64'h0000000008000800;
-defparam \convert_digit|Equal7~0 .shared_arith = "off";
+defparam \switch_to_digit|Equal7~0 .extended_lut = "off";
+defparam \switch_to_digit|Equal7~0 .lut_mask = 64'h0000000008000800;
+defparam \switch_to_digit|Equal7~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N24
-cyclonev_lcell_comb \convert_digit|WideOr2~0 (
+cyclonev_lcell_comb \switch_to_digit|WideOr2~0 (
 // Equation(s):
-// \convert_digit|WideOr2~0_combout  = ( !\convert_digit|WideNor0~4_combout  & ( !\convert_digit|Equal7~0_combout  & ( (!\convert_digit|Equal3~0_combout ) # (((!\SW[3]~input_o ) # (\SW[5]~input_o )) # (\SW[4]~input_o )) ) ) )
+// \switch_to_digit|WideOr2~0_combout  = ( !\switch_to_digit|WideNor0~4_combout  & ( !\switch_to_digit|Equal7~0_combout  & ( (!\switch_to_digit|Equal3~0_combout ) # (((!\SW[3]~input_o ) # (\SW[5]~input_o )) # (\SW[4]~input_o )) ) ) )
 
-	.dataa(!\convert_digit|Equal3~0_combout ),
+	.dataa(!\switch_to_digit|Equal3~0_combout ),
 	.datab(!\SW[4]~input_o ),
 	.datac(!\SW[5]~input_o ),
 	.datad(!\SW[3]~input_o ),
-	.datae(!\convert_digit|WideNor0~4_combout ),
-	.dataf(!\convert_digit|Equal7~0_combout ),
+	.datae(!\switch_to_digit|WideNor0~4_combout ),
+	.dataf(!\switch_to_digit|Equal7~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideOr2~0_combout ),
+	.combout(\switch_to_digit|WideOr2~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideOr2~0 .extended_lut = "off";
-defparam \convert_digit|WideOr2~0 .lut_mask = 64'hFFBF000000000000;
-defparam \convert_digit|WideOr2~0 .shared_arith = "off";
+defparam \switch_to_digit|WideOr2~0 .extended_lut = "off";
+defparam \switch_to_digit|WideOr2~0 .lut_mask = 64'hFFBF000000000000;
+defparam \switch_to_digit|WideOr2~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X83_Y4_N30
-cyclonev_lcell_comb \convert_digit|WideNor0~0 (
+cyclonev_lcell_comb \switch_to_digit|WideNor0~0 (
 // Equation(s):
-// \convert_digit|WideNor0~0_combout  = ( \SW[9]~input_o  & ( (!\SW[7]~input_o  & (!\SW[8]~input_o  & (!\SW[1]~input_o  & \convert_digit|Equal1~0_combout ))) ) ) # ( !\SW[9]~input_o  & ( (!\SW[7]~input_o  & (!\SW[8]~input_o  & (\SW[1]~input_o  & 
-// \convert_digit|Equal1~0_combout ))) ) )
+// \switch_to_digit|WideNor0~0_combout  = ( \SW[9]~input_o  & ( (!\SW[7]~input_o  & (!\SW[8]~input_o  & (!\SW[1]~input_o  & \switch_to_digit|Equal1~0_combout ))) ) ) # ( !\SW[9]~input_o  & ( (!\SW[7]~input_o  & (!\SW[8]~input_o  & (\SW[1]~input_o  & 
+// \switch_to_digit|Equal1~0_combout ))) ) )
 
 	.dataa(!\SW[7]~input_o ),
 	.datab(!\SW[8]~input_o ),
 	.datac(!\SW[1]~input_o ),
-	.datad(!\convert_digit|Equal1~0_combout ),
+	.datad(!\switch_to_digit|Equal1~0_combout ),
 	.datae(gnd),
 	.dataf(!\SW[9]~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideNor0~0_combout ),
+	.combout(\switch_to_digit|WideNor0~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideNor0~0 .extended_lut = "off";
-defparam \convert_digit|WideNor0~0 .lut_mask = 64'h0008000800800080;
-defparam \convert_digit|WideNor0~0 .shared_arith = "off";
+defparam \switch_to_digit|WideNor0~0 .extended_lut = "off";
+defparam \switch_to_digit|WideNor0~0 .lut_mask = 64'h0008000800800080;
+defparam \switch_to_digit|WideNor0~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N54
-cyclonev_lcell_comb \convert_digit|WideNor0~1 (
+cyclonev_lcell_comb \switch_to_digit|WideNor0~1 (
 // Equation(s):
-// \convert_digit|WideNor0~1_combout  = ( \SW[3]~input_o  & ( \convert_digit|WideNor0~0_combout  ) ) # ( !\SW[3]~input_o  & ( \convert_digit|WideNor0~0_combout  ) ) # ( \SW[3]~input_o  & ( !\convert_digit|WideNor0~0_combout  & ( 
-// ((\convert_digit|Equal3~0_combout  & (!\SW[4]~input_o  & !\SW[5]~input_o ))) # (\convert_digit|Equal7~0_combout ) ) ) ) # ( !\SW[3]~input_o  & ( !\convert_digit|WideNor0~0_combout  & ( ((\convert_digit|Equal3~0_combout  & (!\SW[4]~input_o  & 
-// \SW[5]~input_o ))) # (\convert_digit|Equal7~0_combout ) ) ) )
+// \switch_to_digit|WideNor0~1_combout  = ( \SW[3]~input_o  & ( \switch_to_digit|WideNor0~0_combout  ) ) # ( !\SW[3]~input_o  & ( \switch_to_digit|WideNor0~0_combout  ) ) # ( \SW[3]~input_o  & ( !\switch_to_digit|WideNor0~0_combout  & ( 
+// ((\switch_to_digit|Equal3~0_combout  & (!\SW[4]~input_o  & !\SW[5]~input_o ))) # (\switch_to_digit|Equal7~0_combout ) ) ) ) # ( !\SW[3]~input_o  & ( !\switch_to_digit|WideNor0~0_combout  & ( ((\switch_to_digit|Equal3~0_combout  & (!\SW[4]~input_o  & 
+// \SW[5]~input_o ))) # (\switch_to_digit|Equal7~0_combout ) ) ) )
 
-	.dataa(!\convert_digit|Equal3~0_combout ),
+	.dataa(!\switch_to_digit|Equal3~0_combout ),
 	.datab(!\SW[4]~input_o ),
-	.datac(!\convert_digit|Equal7~0_combout ),
+	.datac(!\switch_to_digit|Equal7~0_combout ),
 	.datad(!\SW[5]~input_o ),
 	.datae(!\SW[3]~input_o ),
-	.dataf(!\convert_digit|WideNor0~0_combout ),
+	.dataf(!\switch_to_digit|WideNor0~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideNor0~1_combout ),
+	.combout(\switch_to_digit|WideNor0~1_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideNor0~1 .extended_lut = "off";
-defparam \convert_digit|WideNor0~1 .lut_mask = 64'h0F4F4F0FFFFFFFFF;
-defparam \convert_digit|WideNor0~1 .shared_arith = "off";
+defparam \switch_to_digit|WideNor0~1 .extended_lut = "off";
+defparam \switch_to_digit|WideNor0~1 .lut_mask = 64'h0F4F4F0FFFFFFFFF;
+defparam \switch_to_digit|WideNor0~1 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N30
-cyclonev_lcell_comb \convert_digit|Equal2~1 (
+cyclonev_lcell_comb \switch_to_digit|Equal2~1 (
 // Equation(s):
-// \convert_digit|Equal2~1_combout  = ( !\SW[4]~input_o  & ( (!\SW[5]~input_o  & !\SW[3]~input_o ) ) )
+// \switch_to_digit|Equal2~1_combout  = ( !\SW[4]~input_o  & ( (!\SW[5]~input_o  & !\SW[3]~input_o ) ) )
 
 	.dataa(gnd),
 	.datab(gnd),
@@ -1826,112 +1826,112 @@ cyclonev_lcell_comb \convert_digit|Equal2~1 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|Equal2~1_combout ),
+	.combout(\switch_to_digit|Equal2~1_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|Equal2~1 .extended_lut = "off";
-defparam \convert_digit|Equal2~1 .lut_mask = 64'hF000F00000000000;
-defparam \convert_digit|Equal2~1 .shared_arith = "off";
+defparam \switch_to_digit|Equal2~1 .extended_lut = "off";
+defparam \switch_to_digit|Equal2~1 .lut_mask = 64'hF000F00000000000;
+defparam \switch_to_digit|Equal2~1 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N33
-cyclonev_lcell_comb \convert_digit|WideNor0~2 (
+cyclonev_lcell_comb \switch_to_digit|WideNor0~2 (
 // Equation(s):
-// \convert_digit|WideNor0~2_combout  = ( \convert_digit|Equal2~1_combout  & ( (\convert_digit|Equal2~0_combout  & ((!\SW[2]~input_o  & (!\SW[0]~input_o  $ (!\SW[6]~input_o ))) # (\SW[2]~input_o  & (!\SW[0]~input_o  & !\SW[6]~input_o )))) ) )
+// \switch_to_digit|WideNor0~2_combout  = ( \switch_to_digit|Equal2~1_combout  & ( (\switch_to_digit|Equal2~0_combout  & ((!\SW[2]~input_o  & (!\SW[0]~input_o  $ (!\SW[6]~input_o ))) # (\SW[2]~input_o  & (!\SW[0]~input_o  & !\SW[6]~input_o )))) ) )
 
 	.dataa(!\SW[2]~input_o ),
 	.datab(!\SW[0]~input_o ),
 	.datac(!\SW[6]~input_o ),
-	.datad(!\convert_digit|Equal2~0_combout ),
+	.datad(!\switch_to_digit|Equal2~0_combout ),
 	.datae(gnd),
-	.dataf(!\convert_digit|Equal2~1_combout ),
+	.dataf(!\switch_to_digit|Equal2~1_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideNor0~2_combout ),
+	.combout(\switch_to_digit|WideNor0~2_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideNor0~2 .extended_lut = "off";
-defparam \convert_digit|WideNor0~2 .lut_mask = 64'h0000000000680068;
-defparam \convert_digit|WideNor0~2 .shared_arith = "off";
+defparam \switch_to_digit|WideNor0~2 .extended_lut = "off";
+defparam \switch_to_digit|WideNor0~2 .lut_mask = 64'h0000000000680068;
+defparam \switch_to_digit|WideNor0~2 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X83_Y4_N33
-cyclonev_lcell_comb \convert_digit|Equal8~0 (
+cyclonev_lcell_comb \switch_to_digit|Equal8~0 (
 // Equation(s):
-// \convert_digit|Equal8~0_combout  = ( !\SW[9]~input_o  & ( (!\SW[7]~input_o  & (\SW[8]~input_o  & (\convert_digit|Equal1~0_combout  & !\SW[1]~input_o ))) ) )
+// \switch_to_digit|Equal8~0_combout  = ( !\SW[9]~input_o  & ( (!\SW[7]~input_o  & (\SW[8]~input_o  & (\switch_to_digit|Equal1~0_combout  & !\SW[1]~input_o ))) ) )
 
 	.dataa(!\SW[7]~input_o ),
 	.datab(!\SW[8]~input_o ),
-	.datac(!\convert_digit|Equal1~0_combout ),
+	.datac(!\switch_to_digit|Equal1~0_combout ),
 	.datad(!\SW[1]~input_o ),
 	.datae(gnd),
 	.dataf(!\SW[9]~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|Equal8~0_combout ),
+	.combout(\switch_to_digit|Equal8~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|Equal8~0 .extended_lut = "off";
-defparam \convert_digit|Equal8~0 .lut_mask = 64'h0200020000000000;
-defparam \convert_digit|Equal8~0 .shared_arith = "off";
+defparam \switch_to_digit|Equal8~0 .extended_lut = "off";
+defparam \switch_to_digit|Equal8~0 .lut_mask = 64'h0200020000000000;
+defparam \switch_to_digit|Equal8~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N42
-cyclonev_lcell_comb \convert_digit|WideNor0~3 (
+cyclonev_lcell_comb \switch_to_digit|WideNor0~3 (
 // Equation(s):
-// \convert_digit|WideNor0~3_combout  = ( \SW[3]~input_o  & ( \SW[5]~input_o  & ( (!\convert_digit|WideNor0~2_combout  & !\convert_digit|Equal8~0_combout ) ) ) ) # ( !\SW[3]~input_o  & ( \SW[5]~input_o  & ( (!\convert_digit|WideNor0~2_combout  & 
-// !\convert_digit|Equal8~0_combout ) ) ) ) # ( \SW[3]~input_o  & ( !\SW[5]~input_o  & ( (!\convert_digit|WideNor0~2_combout  & !\convert_digit|Equal8~0_combout ) ) ) ) # ( !\SW[3]~input_o  & ( !\SW[5]~input_o  & ( (!\convert_digit|WideNor0~2_combout  & 
-// (!\convert_digit|Equal8~0_combout  & ((!\convert_digit|Equal3~0_combout ) # (!\SW[4]~input_o )))) ) ) )
+// \switch_to_digit|WideNor0~3_combout  = ( \SW[3]~input_o  & ( \SW[5]~input_o  & ( (!\switch_to_digit|WideNor0~2_combout  & !\switch_to_digit|Equal8~0_combout ) ) ) ) # ( !\SW[3]~input_o  & ( \SW[5]~input_o  & ( (!\switch_to_digit|WideNor0~2_combout  & 
+// !\switch_to_digit|Equal8~0_combout ) ) ) ) # ( \SW[3]~input_o  & ( !\SW[5]~input_o  & ( (!\switch_to_digit|WideNor0~2_combout  & !\switch_to_digit|Equal8~0_combout ) ) ) ) # ( !\SW[3]~input_o  & ( !\SW[5]~input_o  & ( (!\switch_to_digit|WideNor0~2_combout 
+//  & (!\switch_to_digit|Equal8~0_combout  & ((!\switch_to_digit|Equal3~0_combout ) # (!\SW[4]~input_o )))) ) ) )
 
-	.dataa(!\convert_digit|Equal3~0_combout ),
+	.dataa(!\switch_to_digit|Equal3~0_combout ),
 	.datab(!\SW[4]~input_o ),
-	.datac(!\convert_digit|WideNor0~2_combout ),
-	.datad(!\convert_digit|Equal8~0_combout ),
+	.datac(!\switch_to_digit|WideNor0~2_combout ),
+	.datad(!\switch_to_digit|Equal8~0_combout ),
 	.datae(!\SW[3]~input_o ),
 	.dataf(!\SW[5]~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideNor0~3_combout ),
+	.combout(\switch_to_digit|WideNor0~3_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideNor0~3 .extended_lut = "off";
-defparam \convert_digit|WideNor0~3 .lut_mask = 64'hE000F000F000F000;
-defparam \convert_digit|WideNor0~3 .shared_arith = "off";
+defparam \switch_to_digit|WideNor0~3 .extended_lut = "off";
+defparam \switch_to_digit|WideNor0~3 .lut_mask = 64'hE000F000F000F000;
+defparam \switch_to_digit|WideNor0~3 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: LABCELL_X83_Y4_N36
-cyclonev_lcell_comb \convert_digit|WideOr2 (
+cyclonev_lcell_comb \switch_to_digit|WideOr2 (
 // Equation(s):
-// \convert_digit|WideOr2~combout  = (!\convert_digit|WideOr2~0_combout ) # ((!\convert_digit|WideNor0~1_combout  & \convert_digit|WideNor0~3_combout ))
+// \switch_to_digit|WideOr2~combout  = (!\switch_to_digit|WideOr2~0_combout ) # ((!\switch_to_digit|WideNor0~1_combout  & \switch_to_digit|WideNor0~3_combout ))
 
 	.dataa(gnd),
-	.datab(!\convert_digit|WideOr2~0_combout ),
-	.datac(!\convert_digit|WideNor0~1_combout ),
-	.datad(!\convert_digit|WideNor0~3_combout ),
+	.datab(!\switch_to_digit|WideOr2~0_combout ),
+	.datac(!\switch_to_digit|WideNor0~1_combout ),
+	.datad(!\switch_to_digit|WideNor0~3_combout ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideOr2~combout ),
+	.combout(\switch_to_digit|WideOr2~combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideOr2 .extended_lut = "off";
-defparam \convert_digit|WideOr2 .lut_mask = 64'hCCFCCCFCCCFCCCFC;
-defparam \convert_digit|WideOr2 .shared_arith = "off";
+defparam \switch_to_digit|WideOr2 .extended_lut = "off";
+defparam \switch_to_digit|WideOr2 .lut_mask = 64'hCCFCCCFCCCFCCCFC;
+defparam \switch_to_digit|WideOr2 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: IOIBUF_X89_Y4_N61
@@ -1979,9 +1979,9 @@ defparam \KEY[0]~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LABCELL_X85_Y4_N3
-cyclonev_lcell_comb \finite_state_machine|Selector5~0 (
+cyclonev_lcell_comb \fsm|Selector5~0 (
 // Equation(s):
-// \finite_state_machine|Selector5~0_combout  = ( !\KEY[1]~input_o  & ( (!\KEY[2]~input_o  & (!\KEY[0]~input_o  & !\KEY[3]~input_o )) ) )
+// \fsm|Selector5~0_combout  = ( !\KEY[1]~input_o  & ( (!\KEY[2]~input_o  & (!\KEY[0]~input_o  & !\KEY[3]~input_o )) ) )
 
 	.dataa(!\KEY[2]~input_o ),
 	.datab(gnd),
@@ -1992,126 +1992,126 @@ cyclonev_lcell_comb \finite_state_machine|Selector5~0 (
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\finite_state_machine|Selector5~0_combout ),
+	.combout(\fsm|Selector5~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \finite_state_machine|Selector5~0 .extended_lut = "off";
-defparam \finite_state_machine|Selector5~0 .lut_mask = 64'hA000A00000000000;
-defparam \finite_state_machine|Selector5~0 .shared_arith = "off";
+defparam \fsm|Selector5~0 .extended_lut = "off";
+defparam \fsm|Selector5~0 .lut_mask = 64'hA000A00000000000;
+defparam \fsm|Selector5~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X84_Y4_N36
-cyclonev_lcell_comb \finite_state_machine|Equal0~0 (
+cyclonev_lcell_comb \fsm|Equal0~0 (
 // Equation(s):
-// \finite_state_machine|Equal0~0_combout  = ( \convert_digit|Equal1~0_combout  & ( !\convert_digit|Equal2~0_combout  ) ) # ( !\convert_digit|Equal1~0_combout  )
+// \fsm|Equal0~0_combout  = ( \switch_to_digit|Equal1~0_combout  & ( !\switch_to_digit|Equal2~0_combout  ) ) # ( !\switch_to_digit|Equal1~0_combout  )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(!\convert_digit|Equal2~0_combout ),
+	.datac(!\switch_to_digit|Equal2~0_combout ),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\convert_digit|Equal1~0_combout ),
+	.dataf(!\switch_to_digit|Equal1~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\finite_state_machine|Equal0~0_combout ),
+	.combout(\fsm|Equal0~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \finite_state_machine|Equal0~0 .extended_lut = "off";
-defparam \finite_state_machine|Equal0~0 .lut_mask = 64'hFFFFFFFFF0F0F0F0;
-defparam \finite_state_machine|Equal0~0 .shared_arith = "off";
+defparam \fsm|Equal0~0 .extended_lut = "off";
+defparam \fsm|Equal0~0 .lut_mask = 64'hFFFFFFFFF0F0F0F0;
+defparam \fsm|Equal0~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X84_Y4_N38
-dffeas \finite_state_machine|slv_fsm_state.state_2 (
+dffeas \fsm|slv_fsm_state.state_2 (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\finite_state_machine|slv_fsm_state.state_1~q ),
+	.asdata(\fsm|slv_fsm_state.state_1~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(vcc),
-	.ena(\finite_state_machine|Equal0~0_combout ),
+	.ena(\fsm|Equal0~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\finite_state_machine|slv_fsm_state.state_2~q ),
+	.q(\fsm|slv_fsm_state.state_2~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.state_2 .is_wysiwyg = "true";
-defparam \finite_state_machine|slv_fsm_state.state_2 .power_up = "low";
+defparam \fsm|slv_fsm_state.state_2 .is_wysiwyg = "true";
+defparam \fsm|slv_fsm_state.state_2 .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X84_Y4_N20
-dffeas \finite_state_machine|slv_fsm_state.state_3 (
+dffeas \fsm|slv_fsm_state.state_3 (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\finite_state_machine|slv_fsm_state.state_2~q ),
+	.asdata(\fsm|slv_fsm_state.state_2~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(vcc),
-	.ena(\finite_state_machine|Equal0~0_combout ),
+	.ena(\fsm|Equal0~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\finite_state_machine|slv_fsm_state.state_3~q ),
+	.q(\fsm|slv_fsm_state.state_3~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.state_3 .is_wysiwyg = "true";
-defparam \finite_state_machine|slv_fsm_state.state_3 .power_up = "low";
+defparam \fsm|slv_fsm_state.state_3 .is_wysiwyg = "true";
+defparam \fsm|slv_fsm_state.state_3 .power_up = "low";
 // synopsys translate_on
 
 // Location: FF_X84_Y4_N59
-dffeas \finite_state_machine|slv_fsm_state.State_4 (
+dffeas \fsm|slv_fsm_state.State_4 (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\finite_state_machine|slv_fsm_state.state_3~q ),
+	.asdata(\fsm|slv_fsm_state.state_3~q ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(vcc),
-	.ena(\finite_state_machine|Equal0~0_combout ),
+	.ena(\fsm|Equal0~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\finite_state_machine|slv_fsm_state.State_4~q ),
+	.q(\fsm|slv_fsm_state.State_4~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.State_4 .is_wysiwyg = "true";
-defparam \finite_state_machine|slv_fsm_state.State_4 .power_up = "low";
+defparam \fsm|slv_fsm_state.State_4 .is_wysiwyg = "true";
+defparam \fsm|slv_fsm_state.State_4 .power_up = "low";
 // synopsys translate_on
 
 // Location: MLABCELL_X84_Y4_N42
-cyclonev_lcell_comb \finite_state_machine|Selector5~1 (
+cyclonev_lcell_comb \fsm|Selector5~1 (
 // Equation(s):
-// \finite_state_machine|Selector5~1_combout  = ( \finite_state_machine|slv_fsm_state.State_4~q  & ( (!\convert_digit|Equal1~0_combout ) # ((!\convert_digit|Equal2~0_combout ) # ((\finite_state_machine|Selector5~0_combout  & 
-// \finite_state_machine|slv_fsm_state.State_5~q ))) ) ) # ( !\finite_state_machine|slv_fsm_state.State_4~q  & ( (\finite_state_machine|Selector5~0_combout  & \finite_state_machine|slv_fsm_state.State_5~q ) ) )
+// \fsm|Selector5~1_combout  = ( \fsm|slv_fsm_state.State_4~q  & ( (!\switch_to_digit|Equal1~0_combout ) # ((!\switch_to_digit|Equal2~0_combout ) # ((\fsm|Selector5~0_combout  & \fsm|slv_fsm_state.State_5~q ))) ) ) # ( !\fsm|slv_fsm_state.State_4~q  & ( 
+// (\fsm|Selector5~0_combout  & \fsm|slv_fsm_state.State_5~q ) ) )
 
-	.dataa(!\convert_digit|Equal1~0_combout ),
-	.datab(!\convert_digit|Equal2~0_combout ),
-	.datac(!\finite_state_machine|Selector5~0_combout ),
-	.datad(!\finite_state_machine|slv_fsm_state.State_5~q ),
+	.dataa(!\switch_to_digit|Equal1~0_combout ),
+	.datab(!\switch_to_digit|Equal2~0_combout ),
+	.datac(!\fsm|Selector5~0_combout ),
+	.datad(!\fsm|slv_fsm_state.State_5~q ),
 	.datae(gnd),
-	.dataf(!\finite_state_machine|slv_fsm_state.State_4~q ),
+	.dataf(!\fsm|slv_fsm_state.State_4~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\finite_state_machine|Selector5~1_combout ),
+	.combout(\fsm|Selector5~1_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \finite_state_machine|Selector5~1 .extended_lut = "off";
-defparam \finite_state_machine|Selector5~1 .lut_mask = 64'h000F000FEEEFEEEF;
-defparam \finite_state_machine|Selector5~1 .shared_arith = "off";
+defparam \fsm|Selector5~1 .extended_lut = "off";
+defparam \fsm|Selector5~1 .lut_mask = 64'h000F000FEEEFEEEF;
+defparam \fsm|Selector5~1 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X84_Y4_N44
-dffeas \finite_state_machine|slv_fsm_state.State_5 (
+dffeas \fsm|slv_fsm_state.State_5 (
 	.clk(\clk~inputCLKENA0_outclk ),
-	.d(\finite_state_machine|Selector5~1_combout ),
+	.d(\fsm|Selector5~1_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -2120,42 +2120,42 @@ dffeas \finite_state_machine|slv_fsm_state.State_5 (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\finite_state_machine|slv_fsm_state.State_5~q ),
+	.q(\fsm|slv_fsm_state.State_5~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.State_5 .is_wysiwyg = "true";
-defparam \finite_state_machine|slv_fsm_state.State_5 .power_up = "low";
+defparam \fsm|slv_fsm_state.State_5 .is_wysiwyg = "true";
+defparam \fsm|slv_fsm_state.State_5 .power_up = "low";
 // synopsys translate_on
 
 // Location: MLABCELL_X84_Y4_N24
-cyclonev_lcell_comb \finite_state_machine|slv_fsm_state.State_6~0 (
+cyclonev_lcell_comb \fsm|slv_fsm_state.State_6~0 (
 // Equation(s):
-// \finite_state_machine|slv_fsm_state.State_6~0_combout  = ( \finite_state_machine|slv_fsm_state.State_6~q  & ( \finite_state_machine|slv_fsm_state.State_5~q  ) ) # ( !\finite_state_machine|slv_fsm_state.State_6~q  & ( 
-// \finite_state_machine|slv_fsm_state.State_5~q  & ( (((\KEY[0]~input_o ) # (\KEY[1]~input_o )) # (\KEY[3]~input_o )) # (\KEY[2]~input_o ) ) ) ) # ( \finite_state_machine|slv_fsm_state.State_6~q  & ( !\finite_state_machine|slv_fsm_state.State_5~q  ) )
+// \fsm|slv_fsm_state.State_6~0_combout  = ( \fsm|slv_fsm_state.State_6~q  & ( \fsm|slv_fsm_state.State_5~q  ) ) # ( !\fsm|slv_fsm_state.State_6~q  & ( \fsm|slv_fsm_state.State_5~q  & ( (((\KEY[0]~input_o ) # (\KEY[1]~input_o )) # (\KEY[3]~input_o )) # 
+// (\KEY[2]~input_o ) ) ) ) # ( \fsm|slv_fsm_state.State_6~q  & ( !\fsm|slv_fsm_state.State_5~q  ) )
 
 	.dataa(!\KEY[2]~input_o ),
 	.datab(!\KEY[3]~input_o ),
 	.datac(!\KEY[1]~input_o ),
 	.datad(!\KEY[0]~input_o ),
-	.datae(!\finite_state_machine|slv_fsm_state.State_6~q ),
-	.dataf(!\finite_state_machine|slv_fsm_state.State_5~q ),
+	.datae(!\fsm|slv_fsm_state.State_6~q ),
+	.dataf(!\fsm|slv_fsm_state.State_5~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\finite_state_machine|slv_fsm_state.State_6~0_combout ),
+	.combout(\fsm|slv_fsm_state.State_6~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.State_6~0 .extended_lut = "off";
-defparam \finite_state_machine|slv_fsm_state.State_6~0 .lut_mask = 64'h0000FFFF7FFFFFFF;
-defparam \finite_state_machine|slv_fsm_state.State_6~0 .shared_arith = "off";
+defparam \fsm|slv_fsm_state.State_6~0 .extended_lut = "off";
+defparam \fsm|slv_fsm_state.State_6~0 .lut_mask = 64'h0000FFFF7FFFFFFF;
+defparam \fsm|slv_fsm_state.State_6~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X84_Y4_N26
-dffeas \finite_state_machine|slv_fsm_state.State_6 (
+dffeas \fsm|slv_fsm_state.State_6 (
 	.clk(\clk~inputCLKENA0_outclk ),
-	.d(\finite_state_machine|slv_fsm_state.State_6~0_combout ),
+	.d(\fsm|slv_fsm_state.State_6~0_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -2164,43 +2164,43 @@ dffeas \finite_state_machine|slv_fsm_state.State_6 (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\finite_state_machine|slv_fsm_state.State_6~q ),
+	.q(\fsm|slv_fsm_state.State_6~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.State_6 .is_wysiwyg = "true";
-defparam \finite_state_machine|slv_fsm_state.State_6 .power_up = "low";
+defparam \fsm|slv_fsm_state.State_6 .is_wysiwyg = "true";
+defparam \fsm|slv_fsm_state.State_6 .power_up = "low";
 // synopsys translate_on
 
 // Location: MLABCELL_X84_Y4_N12
-cyclonev_lcell_comb \finite_state_machine|slv_fsm_state.state_0~0 (
+cyclonev_lcell_comb \fsm|slv_fsm_state.state_0~0 (
 // Equation(s):
-// \finite_state_machine|slv_fsm_state.state_0~0_combout  = ( \finite_state_machine|slv_fsm_state.state_0~q  & ( \finite_state_machine|slv_fsm_state.State_5~q  ) ) # ( !\finite_state_machine|slv_fsm_state.state_0~q  & ( 
-// \finite_state_machine|slv_fsm_state.State_5~q  & ( (!\finite_state_machine|Selector5~0_combout ) # (\finite_state_machine|slv_fsm_state.State_6~q ) ) ) ) # ( \finite_state_machine|slv_fsm_state.state_0~q  & ( !\finite_state_machine|slv_fsm_state.State_5~q 
-//  ) ) # ( !\finite_state_machine|slv_fsm_state.state_0~q  & ( !\finite_state_machine|slv_fsm_state.State_5~q  & ( (!\convert_digit|Equal1~0_combout ) # ((!\convert_digit|Equal2~0_combout ) # (\finite_state_machine|slv_fsm_state.State_6~q )) ) ) )
+// \fsm|slv_fsm_state.state_0~0_combout  = ( \fsm|slv_fsm_state.state_0~q  & ( \fsm|slv_fsm_state.State_5~q  ) ) # ( !\fsm|slv_fsm_state.state_0~q  & ( \fsm|slv_fsm_state.State_5~q  & ( (!\fsm|Selector5~0_combout ) # (\fsm|slv_fsm_state.State_6~q ) ) ) ) # ( 
+// \fsm|slv_fsm_state.state_0~q  & ( !\fsm|slv_fsm_state.State_5~q  ) ) # ( !\fsm|slv_fsm_state.state_0~q  & ( !\fsm|slv_fsm_state.State_5~q  & ( (!\switch_to_digit|Equal1~0_combout ) # ((!\switch_to_digit|Equal2~0_combout ) # (\fsm|slv_fsm_state.State_6~q 
+// )) ) ) )
 
-	.dataa(!\convert_digit|Equal1~0_combout ),
-	.datab(!\convert_digit|Equal2~0_combout ),
-	.datac(!\finite_state_machine|slv_fsm_state.State_6~q ),
-	.datad(!\finite_state_machine|Selector5~0_combout ),
-	.datae(!\finite_state_machine|slv_fsm_state.state_0~q ),
-	.dataf(!\finite_state_machine|slv_fsm_state.State_5~q ),
+	.dataa(!\switch_to_digit|Equal1~0_combout ),
+	.datab(!\switch_to_digit|Equal2~0_combout ),
+	.datac(!\fsm|slv_fsm_state.State_6~q ),
+	.datad(!\fsm|Selector5~0_combout ),
+	.datae(!\fsm|slv_fsm_state.state_0~q ),
+	.dataf(!\fsm|slv_fsm_state.State_5~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\finite_state_machine|slv_fsm_state.state_0~0_combout ),
+	.combout(\fsm|slv_fsm_state.state_0~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.state_0~0 .extended_lut = "off";
-defparam \finite_state_machine|slv_fsm_state.state_0~0 .lut_mask = 64'hEFEFFFFFFF0FFFFF;
-defparam \finite_state_machine|slv_fsm_state.state_0~0 .shared_arith = "off";
+defparam \fsm|slv_fsm_state.state_0~0 .extended_lut = "off";
+defparam \fsm|slv_fsm_state.state_0~0 .lut_mask = 64'hEFEFFFFFFF0FFFFF;
+defparam \fsm|slv_fsm_state.state_0~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X84_Y4_N14
-dffeas \finite_state_machine|slv_fsm_state.state_0 (
+dffeas \fsm|slv_fsm_state.state_0 (
 	.clk(\clk~inputCLKENA0_outclk ),
-	.d(\finite_state_machine|slv_fsm_state.state_0~0_combout ),
+	.d(\fsm|slv_fsm_state.state_0~0_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
@@ -2209,68 +2209,67 @@ dffeas \finite_state_machine|slv_fsm_state.state_0 (
 	.ena(vcc),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\finite_state_machine|slv_fsm_state.state_0~q ),
+	.q(\fsm|slv_fsm_state.state_0~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.state_0 .is_wysiwyg = "true";
-defparam \finite_state_machine|slv_fsm_state.state_0 .power_up = "low";
+defparam \fsm|slv_fsm_state.state_0 .is_wysiwyg = "true";
+defparam \fsm|slv_fsm_state.state_0 .power_up = "low";
 // synopsys translate_on
 
 // Location: MLABCELL_X84_Y4_N21
-cyclonev_lcell_comb \finite_state_machine|slv_fsm_state.state_1~0 (
+cyclonev_lcell_comb \fsm|slv_fsm_state.state_1~0 (
 // Equation(s):
-// \finite_state_machine|slv_fsm_state.state_1~0_combout  = !\finite_state_machine|slv_fsm_state.state_0~q 
+// \fsm|slv_fsm_state.state_1~0_combout  = !\fsm|slv_fsm_state.state_0~q 
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(!\finite_state_machine|slv_fsm_state.state_0~q ),
+	.datac(!\fsm|slv_fsm_state.state_0~q ),
 	.datad(gnd),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\finite_state_machine|slv_fsm_state.state_1~0_combout ),
+	.combout(\fsm|slv_fsm_state.state_1~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.state_1~0 .extended_lut = "off";
-defparam \finite_state_machine|slv_fsm_state.state_1~0 .lut_mask = 64'hF0F0F0F0F0F0F0F0;
-defparam \finite_state_machine|slv_fsm_state.state_1~0 .shared_arith = "off";
+defparam \fsm|slv_fsm_state.state_1~0 .extended_lut = "off";
+defparam \fsm|slv_fsm_state.state_1~0 .lut_mask = 64'hF0F0F0F0F0F0F0F0;
+defparam \fsm|slv_fsm_state.state_1~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X84_Y4_N23
-dffeas \finite_state_machine|slv_fsm_state.state_1 (
+dffeas \fsm|slv_fsm_state.state_1 (
 	.clk(\clk~inputCLKENA0_outclk ),
-	.d(\finite_state_machine|slv_fsm_state.state_1~0_combout ),
+	.d(\fsm|slv_fsm_state.state_1~0_combout ),
 	.asdata(vcc),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
 	.sload(gnd),
-	.ena(\finite_state_machine|Equal0~0_combout ),
+	.ena(\fsm|Equal0~0_combout ),
 	.devclrn(devclrn),
 	.devpor(devpor),
-	.q(\finite_state_machine|slv_fsm_state.state_1~q ),
+	.q(\fsm|slv_fsm_state.state_1~q ),
 	.prn(vcc));
 // synopsys translate_off
-defparam \finite_state_machine|slv_fsm_state.state_1 .is_wysiwyg = "true";
-defparam \finite_state_machine|slv_fsm_state.state_1 .power_up = "low";
+defparam \fsm|slv_fsm_state.state_1 .is_wysiwyg = "true";
+defparam \fsm|slv_fsm_state.state_1 .power_up = "low";
 // synopsys translate_on
 
 // Location: MLABCELL_X84_Y4_N30
 cyclonev_lcell_comb \Equal0~0 (
 // Equation(s):
-// \Equal0~0_combout  = ( !\finite_state_machine|slv_fsm_state.state_3~q  & ( !\finite_state_machine|slv_fsm_state.State_6~q  & ( (\finite_state_machine|slv_fsm_state.state_1~q  & (!\finite_state_machine|slv_fsm_state.State_5~q  & 
-// (!\finite_state_machine|slv_fsm_state.state_2~q  & !\finite_state_machine|slv_fsm_state.State_4~q ))) ) ) )
+// \Equal0~0_combout  = ( !\fsm|slv_fsm_state.state_3~q  & ( !\fsm|slv_fsm_state.State_6~q  & ( (\fsm|slv_fsm_state.state_1~q  & (!\fsm|slv_fsm_state.State_5~q  & (!\fsm|slv_fsm_state.state_2~q  & !\fsm|slv_fsm_state.State_4~q ))) ) ) )
 
-	.dataa(!\finite_state_machine|slv_fsm_state.state_1~q ),
-	.datab(!\finite_state_machine|slv_fsm_state.State_5~q ),
-	.datac(!\finite_state_machine|slv_fsm_state.state_2~q ),
-	.datad(!\finite_state_machine|slv_fsm_state.State_4~q ),
-	.datae(!\finite_state_machine|slv_fsm_state.state_3~q ),
-	.dataf(!\finite_state_machine|slv_fsm_state.State_6~q ),
+	.dataa(!\fsm|slv_fsm_state.state_1~q ),
+	.datab(!\fsm|slv_fsm_state.State_5~q ),
+	.datac(!\fsm|slv_fsm_state.state_2~q ),
+	.datad(!\fsm|slv_fsm_state.State_4~q ),
+	.datae(!\fsm|slv_fsm_state.state_3~q ),
+	.dataf(!\fsm|slv_fsm_state.State_6~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2287,12 +2286,12 @@ defparam \Equal0~0 .shared_arith = "off";
 // Location: LABCELL_X85_Y4_N27
 cyclonev_lcell_comb \slv_enable_1~0 (
 // Equation(s):
-// \slv_enable_1~0_combout  = ( \Equal0~0_combout  & ( (!\convert_digit|Equal2~0_combout ) # (!\convert_digit|Equal1~0_combout ) ) )
+// \slv_enable_1~0_combout  = ( \Equal0~0_combout  & ( (!\switch_to_digit|Equal2~0_combout ) # (!\switch_to_digit|Equal1~0_combout ) ) )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(!\convert_digit|Equal2~0_combout ),
-	.datad(!\convert_digit|Equal1~0_combout ),
+	.datac(!\switch_to_digit|Equal2~0_combout ),
+	.datad(!\switch_to_digit|Equal1~0_combout ),
 	.datae(gnd),
 	.dataf(!\Equal0~0_combout ),
 	.datag(gnd),
@@ -2311,15 +2310,14 @@ defparam \slv_enable_1~0 .shared_arith = "off";
 // Location: MLABCELL_X84_Y4_N0
 cyclonev_lcell_comb \slv_enable_2~0 (
 // Equation(s):
-// \slv_enable_2~0_combout  = ( !\finite_state_machine|slv_fsm_state.State_5~q  & ( (!\finite_state_machine|slv_fsm_state.State_4~q  & (!\finite_state_machine|slv_fsm_state.State_6~q  & ((\finite_state_machine|slv_fsm_state.state_2~q ) # 
-// (\finite_state_machine|slv_fsm_state.state_3~q )))) ) )
+// \slv_enable_2~0_combout  = ( !\fsm|slv_fsm_state.State_5~q  & ( (!\fsm|slv_fsm_state.State_4~q  & (!\fsm|slv_fsm_state.State_6~q  & ((\fsm|slv_fsm_state.state_2~q ) # (\fsm|slv_fsm_state.state_3~q )))) ) )
 
-	.dataa(!\finite_state_machine|slv_fsm_state.state_3~q ),
-	.datab(!\finite_state_machine|slv_fsm_state.State_4~q ),
-	.datac(!\finite_state_machine|slv_fsm_state.State_6~q ),
-	.datad(!\finite_state_machine|slv_fsm_state.state_2~q ),
+	.dataa(!\fsm|slv_fsm_state.state_3~q ),
+	.datab(!\fsm|slv_fsm_state.State_4~q ),
+	.datac(!\fsm|slv_fsm_state.State_6~q ),
+	.datad(!\fsm|slv_fsm_state.state_2~q ),
 	.datae(gnd),
-	.dataf(!\finite_state_machine|slv_fsm_state.State_5~q ),
+	.dataf(!\fsm|slv_fsm_state.State_5~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2334,41 +2332,41 @@ defparam \slv_enable_2~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X84_Y4_N9
-cyclonev_lcell_comb \finite_state_machine|WideOr2 (
+cyclonev_lcell_comb \fsm|WideOr2 (
 // Equation(s):
-// \finite_state_machine|WideOr2~combout  = ( !\finite_state_machine|slv_fsm_state.state_3~q  & ( (!\finite_state_machine|slv_fsm_state.State_5~q  & !\finite_state_machine|slv_fsm_state.state_1~q ) ) )
+// \fsm|WideOr2~combout  = ( !\fsm|slv_fsm_state.state_3~q  & ( (!\fsm|slv_fsm_state.State_5~q  & !\fsm|slv_fsm_state.state_1~q ) ) )
 
 	.dataa(gnd),
 	.datab(gnd),
-	.datac(!\finite_state_machine|slv_fsm_state.State_5~q ),
-	.datad(!\finite_state_machine|slv_fsm_state.state_1~q ),
+	.datac(!\fsm|slv_fsm_state.State_5~q ),
+	.datad(!\fsm|slv_fsm_state.state_1~q ),
 	.datae(gnd),
-	.dataf(!\finite_state_machine|slv_fsm_state.state_3~q ),
+	.dataf(!\fsm|slv_fsm_state.state_3~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\finite_state_machine|WideOr2~combout ),
+	.combout(\fsm|WideOr2~combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \finite_state_machine|WideOr2 .extended_lut = "off";
-defparam \finite_state_machine|WideOr2 .lut_mask = 64'hF000F00000000000;
-defparam \finite_state_machine|WideOr2 .shared_arith = "off";
+defparam \fsm|WideOr2 .extended_lut = "off";
+defparam \fsm|WideOr2 .lut_mask = 64'hF000F00000000000;
+defparam \fsm|WideOr2 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X84_Y4_N6
 cyclonev_lcell_comb \slv_enable_1~2 (
 // Equation(s):
-// \slv_enable_1~2_combout  = ( \finite_state_machine|WideOr2~combout  & ( (!\Equal0~0_combout  & (\slv_enable_2~0_combout  & ((!\convert_digit|Equal2~0_combout ) # (!\convert_digit|Equal1~0_combout )))) # (\Equal0~0_combout  & 
-// (((\convert_digit|Equal2~0_combout  & \convert_digit|Equal1~0_combout )))) ) ) # ( !\finite_state_machine|WideOr2~combout  & ( (\convert_digit|Equal2~0_combout  & (\convert_digit|Equal1~0_combout  & \Equal0~0_combout )) ) )
+// \slv_enable_1~2_combout  = ( \fsm|WideOr2~combout  & ( (!\Equal0~0_combout  & (\slv_enable_2~0_combout  & ((!\switch_to_digit|Equal2~0_combout ) # (!\switch_to_digit|Equal1~0_combout )))) # (\Equal0~0_combout  & (((\switch_to_digit|Equal2~0_combout  & 
+// \switch_to_digit|Equal1~0_combout )))) ) ) # ( !\fsm|WideOr2~combout  & ( (\switch_to_digit|Equal2~0_combout  & (\switch_to_digit|Equal1~0_combout  & \Equal0~0_combout )) ) )
 
 	.dataa(!\slv_enable_2~0_combout ),
-	.datab(!\convert_digit|Equal2~0_combout ),
-	.datac(!\convert_digit|Equal1~0_combout ),
+	.datab(!\switch_to_digit|Equal2~0_combout ),
+	.datac(!\switch_to_digit|Equal1~0_combout ),
 	.datad(!\Equal0~0_combout ),
 	.datae(gnd),
-	.dataf(!\finite_state_machine|WideOr2~combout ),
+	.dataf(!\fsm|WideOr2~combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2383,90 +2381,91 @@ defparam \slv_enable_1~2 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N21
-cyclonev_lcell_comb \convert_digit|Equal6~0 (
+cyclonev_lcell_comb \switch_to_digit|Equal6~0 (
 // Equation(s):
-// \convert_digit|Equal6~0_combout  = ( \convert_digit|Equal2~2_combout  & ( (!\SW[2]~input_o  & (\convert_digit|Equal2~0_combout  & \SW[6]~input_o )) ) )
+// \switch_to_digit|Equal6~0_combout  = ( \switch_to_digit|Equal2~2_combout  & ( (!\SW[2]~input_o  & (\switch_to_digit|Equal2~0_combout  & \SW[6]~input_o )) ) )
 
 	.dataa(!\SW[2]~input_o ),
-	.datab(!\convert_digit|Equal2~0_combout ),
+	.datab(!\switch_to_digit|Equal2~0_combout ),
 	.datac(!\SW[6]~input_o ),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\convert_digit|Equal2~2_combout ),
+	.dataf(!\switch_to_digit|Equal2~2_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|Equal6~0_combout ),
+	.combout(\switch_to_digit|Equal6~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|Equal6~0 .extended_lut = "off";
-defparam \convert_digit|Equal6~0 .lut_mask = 64'h0000000002020202;
-defparam \convert_digit|Equal6~0 .shared_arith = "off";
+defparam \switch_to_digit|Equal6~0 .extended_lut = "off";
+defparam \switch_to_digit|Equal6~0 .lut_mask = 64'h0000000002020202;
+defparam \switch_to_digit|Equal6~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N0
-cyclonev_lcell_comb \convert_digit|WideOr1 (
+cyclonev_lcell_comb \switch_to_digit|WideOr1 (
 // Equation(s):
-// \convert_digit|WideOr1~combout  = ( \convert_digit|Equal6~0_combout  & ( \convert_digit|Equal3~0_combout  ) ) # ( !\convert_digit|Equal6~0_combout  & ( \convert_digit|Equal3~0_combout  & ( ((!\SW[3]~input_o  & (!\SW[4]~input_o  $ (!\SW[5]~input_o )))) # 
-// (\convert_digit|Equal7~0_combout ) ) ) ) # ( \convert_digit|Equal6~0_combout  & ( !\convert_digit|Equal3~0_combout  ) ) # ( !\convert_digit|Equal6~0_combout  & ( !\convert_digit|Equal3~0_combout  & ( \convert_digit|Equal7~0_combout  ) ) )
+// \switch_to_digit|WideOr1~combout  = ( \switch_to_digit|Equal6~0_combout  & ( \switch_to_digit|Equal3~0_combout  ) ) # ( !\switch_to_digit|Equal6~0_combout  & ( \switch_to_digit|Equal3~0_combout  & ( ((!\SW[3]~input_o  & (!\SW[4]~input_o  $ 
+// (!\SW[5]~input_o )))) # (\switch_to_digit|Equal7~0_combout ) ) ) ) # ( \switch_to_digit|Equal6~0_combout  & ( !\switch_to_digit|Equal3~0_combout  ) ) # ( !\switch_to_digit|Equal6~0_combout  & ( !\switch_to_digit|Equal3~0_combout  & ( 
+// \switch_to_digit|Equal7~0_combout  ) ) )
 
-	.dataa(!\convert_digit|Equal7~0_combout ),
+	.dataa(!\switch_to_digit|Equal7~0_combout ),
 	.datab(!\SW[4]~input_o ),
 	.datac(!\SW[5]~input_o ),
 	.datad(!\SW[3]~input_o ),
-	.datae(!\convert_digit|Equal6~0_combout ),
-	.dataf(!\convert_digit|Equal3~0_combout ),
+	.datae(!\switch_to_digit|Equal6~0_combout ),
+	.dataf(!\switch_to_digit|Equal3~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideOr1~combout ),
+	.combout(\switch_to_digit|WideOr1~combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideOr1 .extended_lut = "off";
-defparam \convert_digit|WideOr1 .lut_mask = 64'h5555FFFF7D55FFFF;
-defparam \convert_digit|WideOr1 .shared_arith = "off";
+defparam \switch_to_digit|WideOr1 .extended_lut = "off";
+defparam \switch_to_digit|WideOr1 .lut_mask = 64'h5555FFFF7D55FFFF;
+defparam \switch_to_digit|WideOr1 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X84_Y4_N18
-cyclonev_lcell_comb \convert_digit|WideOr0~0 (
+cyclonev_lcell_comb \switch_to_digit|WideOr0~0 (
 // Equation(s):
-// \convert_digit|WideOr0~0_combout  = ( \SW[8]~input_o  & ( (!\SW[1]~input_o  & (!\SW[9]~input_o  & (!\SW[7]~input_o  & \convert_digit|Equal1~0_combout ))) ) ) # ( !\SW[8]~input_o  & ( (!\SW[1]~input_o  & (\SW[9]~input_o  & (!\SW[7]~input_o  & 
-// \convert_digit|Equal1~0_combout ))) ) )
+// \switch_to_digit|WideOr0~0_combout  = ( \SW[8]~input_o  & ( (!\SW[1]~input_o  & (!\SW[9]~input_o  & (!\SW[7]~input_o  & \switch_to_digit|Equal1~0_combout ))) ) ) # ( !\SW[8]~input_o  & ( (!\SW[1]~input_o  & (\SW[9]~input_o  & (!\SW[7]~input_o  & 
+// \switch_to_digit|Equal1~0_combout ))) ) )
 
 	.dataa(!\SW[1]~input_o ),
 	.datab(!\SW[9]~input_o ),
 	.datac(!\SW[7]~input_o ),
-	.datad(!\convert_digit|Equal1~0_combout ),
+	.datad(!\switch_to_digit|Equal1~0_combout ),
 	.datae(gnd),
 	.dataf(!\SW[8]~input_o ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideOr0~0_combout ),
+	.combout(\switch_to_digit|WideOr0~0_combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideOr0~0 .extended_lut = "off";
-defparam \convert_digit|WideOr0~0 .lut_mask = 64'h0020002000800080;
-defparam \convert_digit|WideOr0~0 .shared_arith = "off";
+defparam \switch_to_digit|WideOr0~0 .extended_lut = "off";
+defparam \switch_to_digit|WideOr0~0 .lut_mask = 64'h0020002000800080;
+defparam \switch_to_digit|WideOr0~0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N12
 cyclonev_lcell_comb \slv_enable_1~1 (
 // Equation(s):
-// \slv_enable_1~1_combout  = ( \convert_digit|WideOr0~0_combout  & ( \Equal0~0_combout  & ( (((\convert_digit|WideOr2~0_combout  & !\convert_digit|WideNor0~3_combout )) # (\convert_digit|WideNor0~1_combout )) # (\convert_digit|WideOr1~combout ) ) ) ) # ( 
-// !\convert_digit|WideOr0~0_combout  & ( \Equal0~0_combout  & ( ((!\convert_digit|WideNor0~3_combout ) # (\convert_digit|WideNor0~1_combout )) # (\convert_digit|WideOr1~combout ) ) ) )
+// \slv_enable_1~1_combout  = ( \switch_to_digit|WideOr0~0_combout  & ( \Equal0~0_combout  & ( (((\switch_to_digit|WideOr2~0_combout  & !\switch_to_digit|WideNor0~3_combout )) # (\switch_to_digit|WideNor0~1_combout )) # (\switch_to_digit|WideOr1~combout ) ) 
+// ) ) # ( !\switch_to_digit|WideOr0~0_combout  & ( \Equal0~0_combout  & ( ((!\switch_to_digit|WideNor0~3_combout ) # (\switch_to_digit|WideNor0~1_combout )) # (\switch_to_digit|WideOr1~combout ) ) ) )
 
-	.dataa(!\convert_digit|WideOr1~combout ),
-	.datab(!\convert_digit|WideOr2~0_combout ),
-	.datac(!\convert_digit|WideNor0~1_combout ),
-	.datad(!\convert_digit|WideNor0~3_combout ),
-	.datae(!\convert_digit|WideOr0~0_combout ),
+	.dataa(!\switch_to_digit|WideOr1~combout ),
+	.datab(!\switch_to_digit|WideOr2~0_combout ),
+	.datac(!\switch_to_digit|WideNor0~1_combout ),
+	.datad(!\switch_to_digit|WideNor0~3_combout ),
+	.datae(!\switch_to_digit|WideOr0~0_combout ),
 	.dataf(!\Equal0~0_combout ),
 	.datag(gnd),
 	.cin(gnd),
@@ -2485,7 +2484,7 @@ defparam \slv_enable_1~1 .shared_arith = "off";
 dffeas \flip_flop_1|buff[0] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideNor0~1_combout ),
+	.asdata(\switch_to_digit|WideNor0~1_combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -2504,7 +2503,7 @@ defparam \flip_flop_1|buff[0] .power_up = "low";
 dffeas \flip_flop_1|buff[2] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr1~combout ),
+	.asdata(\switch_to_digit|WideOr1~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -2522,13 +2521,13 @@ defparam \flip_flop_1|buff[2] .power_up = "low";
 // Location: LABCELL_X85_Y4_N0
 cyclonev_lcell_comb \Equal2~1 (
 // Equation(s):
-// \Equal2~1_combout  = ( \flip_flop_1|buff [2] & ( (\convert_digit|WideOr1~combout  & (!\flip_flop_1|buff [0] $ (\convert_digit|WideNor0~1_combout ))) ) ) # ( !\flip_flop_1|buff [2] & ( (!\convert_digit|WideOr1~combout  & (!\flip_flop_1|buff [0] $ 
-// (\convert_digit|WideNor0~1_combout ))) ) )
+// \Equal2~1_combout  = ( \flip_flop_1|buff [2] & ( (\switch_to_digit|WideOr1~combout  & (!\flip_flop_1|buff [0] $ (\switch_to_digit|WideNor0~1_combout ))) ) ) # ( !\flip_flop_1|buff [2] & ( (!\switch_to_digit|WideOr1~combout  & (!\flip_flop_1|buff [0] $ 
+// (\switch_to_digit|WideNor0~1_combout ))) ) )
 
 	.dataa(gnd),
 	.datab(!\flip_flop_1|buff [0]),
-	.datac(!\convert_digit|WideNor0~1_combout ),
-	.datad(!\convert_digit|WideOr1~combout ),
+	.datac(!\switch_to_digit|WideNor0~1_combout ),
+	.datad(!\switch_to_digit|WideOr1~combout ),
 	.datae(gnd),
 	.dataf(!\flip_flop_1|buff [2]),
 	.datag(gnd),
@@ -2545,34 +2544,34 @@ defparam \Equal2~1 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: MLABCELL_X82_Y4_N36
-cyclonev_lcell_comb \convert_digit|WideOr0 (
+cyclonev_lcell_comb \switch_to_digit|WideOr0 (
 // Equation(s):
-// \convert_digit|WideOr0~combout  = ((\convert_digit|WideNor0~3_combout  & !\convert_digit|WideNor0~1_combout )) # (\convert_digit|WideOr0~0_combout )
+// \switch_to_digit|WideOr0~combout  = ((\switch_to_digit|WideNor0~3_combout  & !\switch_to_digit|WideNor0~1_combout )) # (\switch_to_digit|WideOr0~0_combout )
 
 	.dataa(gnd),
-	.datab(!\convert_digit|WideNor0~3_combout ),
-	.datac(!\convert_digit|WideNor0~1_combout ),
-	.datad(!\convert_digit|WideOr0~0_combout ),
+	.datab(!\switch_to_digit|WideNor0~3_combout ),
+	.datac(!\switch_to_digit|WideNor0~1_combout ),
+	.datad(!\switch_to_digit|WideOr0~0_combout ),
 	.datae(gnd),
 	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
-	.combout(\convert_digit|WideOr0~combout ),
+	.combout(\switch_to_digit|WideOr0~combout ),
 	.sumout(),
 	.cout(),
 	.shareout());
 // synopsys translate_off
-defparam \convert_digit|WideOr0 .extended_lut = "off";
-defparam \convert_digit|WideOr0 .lut_mask = 64'h30FF30FF30FF30FF;
-defparam \convert_digit|WideOr0 .shared_arith = "off";
+defparam \switch_to_digit|WideOr0 .extended_lut = "off";
+defparam \switch_to_digit|WideOr0 .lut_mask = 64'h30FF30FF30FF30FF;
+defparam \switch_to_digit|WideOr0 .shared_arith = "off";
 // synopsys translate_on
 
 // Location: FF_X85_Y4_N44
 dffeas \flip_flop_1|buff[3] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr0~combout ),
+	.asdata(\switch_to_digit|WideOr0~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -2590,13 +2589,13 @@ defparam \flip_flop_1|buff[3] .power_up = "low";
 // Location: LABCELL_X85_Y4_N30
 cyclonev_lcell_comb \Equal2~0 (
 // Equation(s):
-// \Equal2~0_combout  = ( \flip_flop_1|buff [3] & ( (!\convert_digit|WideOr0~0_combout  & ((!\convert_digit|WideNor0~3_combout ) # (\convert_digit|WideNor0~1_combout ))) ) ) # ( !\flip_flop_1|buff [3] & ( ((\convert_digit|WideNor0~3_combout  & 
-// !\convert_digit|WideNor0~1_combout )) # (\convert_digit|WideOr0~0_combout ) ) )
+// \Equal2~0_combout  = ( \flip_flop_1|buff [3] & ( (!\switch_to_digit|WideOr0~0_combout  & ((!\switch_to_digit|WideNor0~3_combout ) # (\switch_to_digit|WideNor0~1_combout ))) ) ) # ( !\flip_flop_1|buff [3] & ( ((\switch_to_digit|WideNor0~3_combout  & 
+// !\switch_to_digit|WideNor0~1_combout )) # (\switch_to_digit|WideOr0~0_combout ) ) )
 
-	.dataa(!\convert_digit|WideNor0~3_combout ),
+	.dataa(!\switch_to_digit|WideNor0~3_combout ),
 	.datab(gnd),
-	.datac(!\convert_digit|WideNor0~1_combout ),
-	.datad(!\convert_digit|WideOr0~0_combout ),
+	.datac(!\switch_to_digit|WideNor0~1_combout ),
+	.datad(!\switch_to_digit|WideOr0~0_combout ),
 	.datae(gnd),
 	.dataf(!\flip_flop_1|buff [3]),
 	.datag(gnd),
@@ -2616,11 +2615,11 @@ defparam \Equal2~0 .shared_arith = "off";
 cyclonev_lcell_comb \slv_enable_1~3 (
 // Equation(s):
 // \slv_enable_1~3_combout  = ( \Equal2~1_combout  & ( \Equal2~0_combout  & ( (\slv_enable_1~1_combout ) # (\slv_enable_1~2_combout ) ) ) ) # ( !\Equal2~1_combout  & ( \Equal2~0_combout  & ( (\slv_enable_1~1_combout ) # (\slv_enable_1~2_combout ) ) ) ) # ( 
-// \Equal2~1_combout  & ( !\Equal2~0_combout  & ( ((\slv_enable_1~1_combout  & (!\flip_flop_1|buff [1] $ (!\convert_digit|WideOr2~combout )))) # (\slv_enable_1~2_combout ) ) ) ) # ( !\Equal2~1_combout  & ( !\Equal2~0_combout  & ( (\slv_enable_1~1_combout ) # 
-// (\slv_enable_1~2_combout ) ) ) )
+// \Equal2~1_combout  & ( !\Equal2~0_combout  & ( ((\slv_enable_1~1_combout  & (!\flip_flop_1|buff [1] $ (!\switch_to_digit|WideOr2~combout )))) # (\slv_enable_1~2_combout ) ) ) ) # ( !\Equal2~1_combout  & ( !\Equal2~0_combout  & ( (\slv_enable_1~1_combout ) 
+// # (\slv_enable_1~2_combout ) ) ) )
 
 	.dataa(!\flip_flop_1|buff [1]),
-	.datab(!\convert_digit|WideOr2~combout ),
+	.datab(!\switch_to_digit|WideOr2~combout ),
 	.datac(!\slv_enable_1~2_combout ),
 	.datad(!\slv_enable_1~1_combout ),
 	.datae(!\Equal2~1_combout ),
@@ -2666,7 +2665,7 @@ defparam slv_enable_1.shared_arith = "off";
 dffeas \flip_flop_1|buff[1] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr2~combout ),
+	.asdata(\switch_to_digit|WideOr2~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -2854,14 +2853,14 @@ defparam \HEX_1|WideOr0 .shared_arith = "off";
 // Location: MLABCELL_X84_Y4_N51
 cyclonev_lcell_comb \slv_enable_4~0 (
 // Equation(s):
-// \slv_enable_4~0_combout  = ( !\finite_state_machine|slv_fsm_state.State_5~q  & ( (!\finite_state_machine|slv_fsm_state.state_3~q  & (\finite_state_machine|Equal0~0_combout  & !\finite_state_machine|slv_fsm_state.state_1~q )) ) )
+// \slv_enable_4~0_combout  = ( !\fsm|slv_fsm_state.State_5~q  & ( (!\fsm|slv_fsm_state.state_3~q  & (\fsm|Equal0~0_combout  & !\fsm|slv_fsm_state.state_1~q )) ) )
 
-	.dataa(!\finite_state_machine|slv_fsm_state.state_3~q ),
+	.dataa(!\fsm|slv_fsm_state.state_3~q ),
 	.datab(gnd),
-	.datac(!\finite_state_machine|Equal0~0_combout ),
-	.datad(!\finite_state_machine|slv_fsm_state.state_1~q ),
+	.datac(!\fsm|Equal0~0_combout ),
+	.datad(!\fsm|slv_fsm_state.state_1~q ),
 	.datae(gnd),
-	.dataf(!\finite_state_machine|slv_fsm_state.State_5~q ),
+	.dataf(!\fsm|slv_fsm_state.State_5~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -2903,7 +2902,7 @@ defparam slv_enable_2.shared_arith = "off";
 dffeas \flip_flop_2|buff[0] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideNor0~1_combout ),
+	.asdata(\switch_to_digit|WideNor0~1_combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -2922,7 +2921,7 @@ defparam \flip_flop_2|buff[0] .power_up = "low";
 dffeas \flip_flop_2|buff[3] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr0~combout ),
+	.asdata(\switch_to_digit|WideOr0~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -2941,7 +2940,7 @@ defparam \flip_flop_2|buff[3] .power_up = "low";
 dffeas \flip_flop_2|buff[1] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr2~combout ),
+	.asdata(\switch_to_digit|WideOr2~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -2960,7 +2959,7 @@ defparam \flip_flop_2|buff[1] .power_up = "low";
 dffeas \flip_flop_2|buff[2] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr1~combout ),
+	.asdata(\switch_to_digit|WideOr1~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -3149,17 +3148,16 @@ defparam \HEX_2|WideOr0 .shared_arith = "off";
 // Location: LABCELL_X83_Y4_N0
 cyclonev_lcell_comb \slv_enable_3~1 (
 // Equation(s):
-// \slv_enable_3~1_combout  = ( \finite_state_machine|slv_fsm_state.state_2~q  & ( !\finite_state_machine|slv_fsm_state.State_6~q  & ( (!\finite_state_machine|slv_fsm_state.State_5~q  & (!\finite_state_machine|slv_fsm_state.State_4~q  & 
-// ((\finite_state_machine|slv_fsm_state.state_3~q ) # (\finite_state_machine|slv_fsm_state.state_1~q )))) ) ) ) # ( !\finite_state_machine|slv_fsm_state.state_2~q  & ( !\finite_state_machine|slv_fsm_state.State_6~q  & ( 
-// (!\finite_state_machine|slv_fsm_state.State_5~q  & ((!\finite_state_machine|slv_fsm_state.State_4~q  & ((\finite_state_machine|slv_fsm_state.state_3~q ))) # (\finite_state_machine|slv_fsm_state.State_4~q  & (!\finite_state_machine|slv_fsm_state.state_1~q  
-// & !\finite_state_machine|slv_fsm_state.state_3~q )))) ) ) )
+// \slv_enable_3~1_combout  = ( \fsm|slv_fsm_state.state_2~q  & ( !\fsm|slv_fsm_state.State_6~q  & ( (!\fsm|slv_fsm_state.State_5~q  & (!\fsm|slv_fsm_state.State_4~q  & ((\fsm|slv_fsm_state.state_3~q ) # (\fsm|slv_fsm_state.state_1~q )))) ) ) ) # ( 
+// !\fsm|slv_fsm_state.state_2~q  & ( !\fsm|slv_fsm_state.State_6~q  & ( (!\fsm|slv_fsm_state.State_5~q  & ((!\fsm|slv_fsm_state.State_4~q  & ((\fsm|slv_fsm_state.state_3~q ))) # (\fsm|slv_fsm_state.State_4~q  & (!\fsm|slv_fsm_state.state_1~q  & 
+// !\fsm|slv_fsm_state.state_3~q )))) ) ) )
 
-	.dataa(!\finite_state_machine|slv_fsm_state.State_5~q ),
-	.datab(!\finite_state_machine|slv_fsm_state.State_4~q ),
-	.datac(!\finite_state_machine|slv_fsm_state.state_1~q ),
-	.datad(!\finite_state_machine|slv_fsm_state.state_3~q ),
-	.datae(!\finite_state_machine|slv_fsm_state.state_2~q ),
-	.dataf(!\finite_state_machine|slv_fsm_state.State_6~q ),
+	.dataa(!\fsm|slv_fsm_state.State_5~q ),
+	.datab(!\fsm|slv_fsm_state.State_4~q ),
+	.datac(!\fsm|slv_fsm_state.state_1~q ),
+	.datad(!\fsm|slv_fsm_state.state_3~q ),
+	.datae(!\fsm|slv_fsm_state.state_2~q ),
+	.dataf(!\fsm|slv_fsm_state.State_6~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -3176,14 +3174,14 @@ defparam \slv_enable_3~1 .shared_arith = "off";
 // Location: MLABCELL_X84_Y4_N39
 cyclonev_lcell_comb \slv_enable_3~0 (
 // Equation(s):
-// \slv_enable_3~0_combout  = ( !\finite_state_machine|WideOr2~combout  & ( (\slv_enable_2~0_combout  & ((!\convert_digit|Equal1~0_combout ) # (!\convert_digit|Equal2~0_combout ))) ) )
+// \slv_enable_3~0_combout  = ( !\fsm|WideOr2~combout  & ( (\slv_enable_2~0_combout  & ((!\switch_to_digit|Equal1~0_combout ) # (!\switch_to_digit|Equal2~0_combout ))) ) )
 
-	.dataa(!\convert_digit|Equal1~0_combout ),
+	.dataa(!\switch_to_digit|Equal1~0_combout ),
 	.datab(!\slv_enable_2~0_combout ),
-	.datac(!\convert_digit|Equal2~0_combout ),
+	.datac(!\switch_to_digit|Equal2~0_combout ),
 	.datad(gnd),
 	.datae(gnd),
-	.dataf(!\finite_state_machine|WideOr2~combout ),
+	.dataf(!\fsm|WideOr2~combout ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -3225,7 +3223,7 @@ defparam slv_enable_3.shared_arith = "off";
 dffeas \flip_flop_3|buff[3] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr0~combout ),
+	.asdata(\switch_to_digit|WideOr0~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -3244,7 +3242,7 @@ defparam \flip_flop_3|buff[3] .power_up = "low";
 dffeas \flip_flop_3|buff[2] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr1~combout ),
+	.asdata(\switch_to_digit|WideOr1~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -3263,7 +3261,7 @@ defparam \flip_flop_3|buff[2] .power_up = "low";
 dffeas \flip_flop_3|buff[0] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideNor0~1_combout ),
+	.asdata(\switch_to_digit|WideNor0~1_combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -3282,7 +3280,7 @@ defparam \flip_flop_3|buff[0] .power_up = "low";
 dffeas \flip_flop_3|buff[1] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr2~combout ),
+	.asdata(\switch_to_digit|WideOr2~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -3469,15 +3467,14 @@ defparam \HEX_3|WideOr0 .shared_arith = "off";
 // Location: MLABCELL_X84_Y4_N57
 cyclonev_lcell_comb \slv_enable_4~1 (
 // Equation(s):
-// \slv_enable_4~1_combout  = ( !\finite_state_machine|slv_fsm_state.State_6~q  & ( (!\finite_state_machine|slv_fsm_state.state_2~q  & (!\finite_state_machine|slv_fsm_state.state_3~q  & ((\finite_state_machine|slv_fsm_state.State_5~q ) # 
-// (\finite_state_machine|slv_fsm_state.State_4~q )))) ) )
+// \slv_enable_4~1_combout  = ( !\fsm|slv_fsm_state.State_6~q  & ( (!\fsm|slv_fsm_state.state_2~q  & (!\fsm|slv_fsm_state.state_3~q  & ((\fsm|slv_fsm_state.State_5~q ) # (\fsm|slv_fsm_state.State_4~q )))) ) )
 
-	.dataa(!\finite_state_machine|slv_fsm_state.state_2~q ),
-	.datab(!\finite_state_machine|slv_fsm_state.State_4~q ),
-	.datac(!\finite_state_machine|slv_fsm_state.State_5~q ),
-	.datad(!\finite_state_machine|slv_fsm_state.state_3~q ),
+	.dataa(!\fsm|slv_fsm_state.state_2~q ),
+	.datab(!\fsm|slv_fsm_state.State_4~q ),
+	.datac(!\fsm|slv_fsm_state.State_5~q ),
+	.datad(!\fsm|slv_fsm_state.state_3~q ),
 	.datae(gnd),
-	.dataf(!\finite_state_machine|slv_fsm_state.State_6~q ),
+	.dataf(!\fsm|slv_fsm_state.State_6~q ),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -3519,7 +3516,7 @@ defparam slv_enable_4.shared_arith = "off";
 dffeas \flip_flop_4|buff[1] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr2~combout ),
+	.asdata(\switch_to_digit|WideOr2~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -3538,7 +3535,7 @@ defparam \flip_flop_4|buff[1] .power_up = "low";
 dffeas \flip_flop_4|buff[3] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr0~combout ),
+	.asdata(\switch_to_digit|WideOr0~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -3557,7 +3554,7 @@ defparam \flip_flop_4|buff[3] .power_up = "low";
 dffeas \flip_flop_4|buff[2] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideOr1~combout ),
+	.asdata(\switch_to_digit|WideOr1~combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
@@ -3576,7 +3573,7 @@ defparam \flip_flop_4|buff[2] .power_up = "low";
 dffeas \flip_flop_4|buff[0] (
 	.clk(\clk~inputCLKENA0_outclk ),
 	.d(gnd),
-	.asdata(\convert_digit|WideNor0~1_combout ),
+	.asdata(\switch_to_digit|WideNor0~1_combout ),
 	.clrn(vcc),
 	.aload(gnd),
 	.sclr(gnd),
